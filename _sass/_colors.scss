@@ -1,0 +1,17 @@
+/**
+ * Colors
+ */
+
+$colors: (
+	"site-color" :  #000
+);
+
+@function get-color( $color ) {
+	@if map-has-key( $colors, $color ) {
+		@return map-get( $colors, $color );
+	}
+
+	@else {
+		@warn "WARNING: That color is not in the $lf_colors map.";
+	}
+}
