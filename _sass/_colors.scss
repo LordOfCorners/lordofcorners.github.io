@@ -3,7 +3,8 @@
  */
 
 $colors: (
-	"site-color" :  #000
+	"site-color" :  #000,
+	"background-color" :  #fff
 );
 
 @function get-color( $color ) {

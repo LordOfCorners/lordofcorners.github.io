@@ -15,7 +15,7 @@ var kahane = (function($) {
 	========================================================================== */
 	hamburger = function() {
 		$('.hamburger').click(function(){
-			$(this).toggleClass('open');
+			$(this).add('#menu, #logo').toggleClass('open');
 		});
 	},
 
