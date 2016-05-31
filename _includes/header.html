@@ -19,5 +19,27 @@
 
 <div id="menu" class="menu">
 
+	<ul>
+		<!-- sort pages based on order variable and assign to new variable -->
+		{% assign pages = site.pages | sort:"order"  %}
+
+		{% for p in pages %}
+
+			{% if p.nav-title %}
+
+				<a href="{{ p.url }}">
+
+					<li>
+						{{ p.nav-title }}
+					</li>
+
+				</a>
+
+			{% endif %}
+
+		{% endfor %}
+
+	</ul>
+
 </div>
 
