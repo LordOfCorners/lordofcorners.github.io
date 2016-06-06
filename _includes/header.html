@@ -27,9 +27,9 @@
 
 			{% if p.nav-title %}
 
-				<a href="{{ p.url }}">
+				<a href="{{ p.url | prepend: site.baseurl}}">
 
-					<li>
+					<li class="menu_pages">
 						{{ p.nav-title }}
 					</li>
 

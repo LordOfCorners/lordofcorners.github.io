@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Game Central"
 date:   2016-05-29 10:59:56 -0400
 categories: portfolio
 featured-image: "gamecentral/gc_thumbnail.png"

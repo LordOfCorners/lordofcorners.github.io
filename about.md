@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Michael Kahane: About"
+title: "About Michael Kahane"
 permalink: /about/
 nav-title: About
 order: 2
