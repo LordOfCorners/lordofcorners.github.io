@@ -3,7 +3,7 @@ layout: post
 title:  "Game Central"
 date:   2016-05-29 10:59:56 -0400
 categories: portfolio
-featured-image: "gamecentral/gc_thumbnail.png"
+featured-image: "gamecentral/gc_thumbnail_square.gif"
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
