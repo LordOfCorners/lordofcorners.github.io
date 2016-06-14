@@ -11,17 +11,17 @@ order: 1
 
 		{% for post in site.posts %}
 
-			<div class="portfolio_item">
+			<a href="{{ post.url }}"  class="portfolio_item">
 
-				<div class="portfolio_item_image">
+					<div class="portfolio_item_image">
 
-					<img src="{{ "/images/portfolio/" | append: post.featured-image }}"></img>
+						<img src="{{ "/images/portfolio/" | append: post.featured-image }}"></img>
 
-				</div>
+					</div>
 
-				<div class="portfolio_item_title">{{ post.title }}</div>
+					<div class="portfolio_item_title">{{ post.title }}</div>
 
-			</div>
+			</a>
 
 		{% endfor %}
 

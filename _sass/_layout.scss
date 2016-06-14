@@ -132,6 +132,7 @@
 		-o-transition: .25s ease-in-out;
 	visibility: hidden;
 	width: 100%;
+	z-index: 1;
 
 	&.open {
 		opacity: 1;
@@ -286,24 +287,24 @@
 	justify-content: center;
 	margin-bottom: 2em;
 
-	&_item {
-		max-width: 300px;
-		margin: 1rem;
-		overflow: hidden;
-		position: relative;
-		z-index: -1;
+		&_item {
+			display: block;
+			max-width: 300px;
+			margin: 1rem;
+			overflow: hidden;
+			position: relative;
 
-		&_title {
-			background-color: transparentize(get-color( "site-color" ), 0.25);
-			bottom: 0;
-			color: get-color( "background-color" );
-			padding: 5px 10px;
-			position: absolute;
-			text-align: left;
-			text-transform: uppercase;
-			width: 100%
+			&_title {
+				background-color: transparentize(get-color( "site-color" ), 0.25);
+				bottom: 0;
+				color: get-color( "background-color" );
+				padding: 5px 10px;
+				position: absolute;
+				text-align: left;
+				text-transform: uppercase;
+				width: 100%
+			}
 		}
-	}
 }
 
 /**
