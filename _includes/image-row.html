@@ -1,0 +1,33 @@
+{% if include.image1 %}
+
+<div class="row">
+	<div class="col">
+		<img src="{{ "/images/" | append: include.image1 }}" title="{{ include.image1 | remove: '.jpg' | remove: '.gif' | remove: '.png' | replace: '-', ' ' | capitalize }}"></img>
+	</div>
+</div>
+
+{% endif %}
+
+{% if include.image2 and include.image3 %}
+
+<div class="row">
+	<div class="col half">
+		<img src="{{ "/images/" | append: include.image2 }}" title="{{ include.image2 | remove: '.jpg' | remove: '.gif' | remove: '.png' | replace: '-', ' ' | capitalize }}"></img>
+	</div>
+
+	<div class="col half">
+		<img src="{{ "/images/" | append: include.image3 }}" title="{{ include.image3 | remove: '.jpg' | remove: '.gif' | remove: '.png' | replace: '-', ' ' | capitalize }}"></img>
+	</div>
+</div>
+
+{% endif %}
+
+{% if include.image4 %}
+
+<div class="row">
+	<div class="col">
+		<img src="{{ "/images/" | append: include.image4 }}" title="{{ include.image4 | remove: '.jpg' | remove: '.gif' | remove: '.png' | replace: '-', ' ' | capitalize }}"></img>
+	</div>
+</div>
+
+{% endif %}
