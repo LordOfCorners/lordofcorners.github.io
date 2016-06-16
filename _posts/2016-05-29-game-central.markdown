@@ -4,6 +4,8 @@ title:  "Game Central"
 date:   2016-05-29 10:59:56 -0400
 categories: portfolio
 featured-image: "gamecentral/gc_thumbnail_square.gif"
+project-tags: "Physical Computing"
+year: "April 2015"
 ---
 
 {% include image-row.html image1="about.jpg" image2="about.jpg" image3="about.jpg" image4="about.jpg"%}

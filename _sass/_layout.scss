@@ -268,8 +268,13 @@
 }
 
 .post-meta {
+	background-color: get-color( "site-color" );
+	color: get-color( "background-color" );
+	display: inline-block;
 	font-size: $small-font-size;
-	color: $grey-color;
+	margin-bottom: 3px;
+	padding: 0.1em 1.2em;
+	text-transform: uppercase;
 }
 
 .post-link {
@@ -315,9 +320,14 @@
 }
 
 .post-title {
+	border: 4px solid get-color( "site-color" );
+	display: inline-block;
 	font-size: 42px;
 	letter-spacing: -1px;
 	line-height: 1;
+	margin-bottom: 3px;
+	// padding: 0.1em 0.2em;
+	text-transform: uppercase;
 
 	@include media-query($on-laptop) {
 		font-size: 36px;
