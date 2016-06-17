@@ -182,7 +182,7 @@
  */
 .site-footer {
 	background-color: get-color( "site-color" );
-	border-top: 1px solid $grey-color-light;
+	border-top: 1px solid get-color( "grey-color-light" );
 	font-size: rem(10px);
 	color: get-color( "background-color" );
 	padding: 10px 0;
