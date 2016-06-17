@@ -19,7 +19,7 @@ $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
+$grey-color-light: lighten($grey-color, 30%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
@@ -38,19 +38,19 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+	@media screen and (max-width: $device) {
+		@content;
+	}
 }
 
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "colors",
-        "layout",
-        "syntax-highlighting",
-        "typography",
-        "utilities"
+	"utilities",
+	"base",
+	"colors",
+	"layout",
+	"syntax-highlighting",
+	"typography"
 ;

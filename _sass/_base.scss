@@ -96,16 +96,18 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    border-bottom: .0625em solid $grey-color-light;
+    box-shadow: 0 -.25em 0 $grey-color-light inset;
+    color: $text-color;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $text-color;
     }
 
     &:hover {
+        background-color: $grey-color-light;
         color: $text-color;
-        text-decoration: underline;
     }
 }
 
