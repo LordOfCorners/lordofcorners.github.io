@@ -136,6 +136,7 @@ blockquote {
  */
 pre,
 code {
+    font-family: $base-font-family;
     font-size: 15px;
     background-color: get-color( "grey-color-light" );
 }
@@ -149,6 +150,7 @@ pre {
     overflow-x: auto;
 
     > code {
+        font-family: monospace;
         border: 0;
         padding-right: 0;
         padding-left: 0;

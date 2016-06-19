@@ -314,52 +314,57 @@
 /**
 * Images
 */
-.row {
-	@extend %clearfix;
-	display: block;
-	width: 100%;
-	margin-bottom: 8px;
+.image-set {
+	margin: 2em auto;
 
-	.col {
-		box-sizing: border-box;
+	.row {
+		@extend %clearfix;
 		display: block;
 		width: 100%;
-		padding: 0 4px;
+		margin-bottom: 8px;
 
-		&.left,
-		&:first-child {
-			float: left;
-			padding-left: 0;
-		}
+		.col {
+			box-sizing: border-box;
+			display: block;
+			width: 100%;
+			padding: 0 4px;
 
-		&.right,
-		&:last-child {
-			float: right;
-			padding-right: 0;
-		}
+			&.left,
+			&:first-child {
+				float: left;
+				padding-left: 0;
+			}
 
-		&.right + .col:last-child {
-			padding-right: 4px;
-		}
-
-		&.half {
-			width: 50%;
-		}
-		&.third {
-			width: 33%;
-		}
-		&.twothirds {
-			width: 66%;
-		}
-		&.quarter {
-			width: 25%;
-		}
-
-		& img {
-			margin-bottom: 8px;
-
+			&.right,
 			&:last-child {
-				margin-bottom: 0;
+				float: right;
+				padding-right: 0;
+			}
+
+			&.right + .col:last-child {
+				padding-right: 4px;
+			}
+
+			&.half {
+				width: 50%;
+			}
+			&.third {
+				width: 33%;
+			}
+			&.twothirds {
+				width: 66%;
+			}
+			&.quarter {
+				width: 25%;
+			}
+
+			& img {
+				margin-bottom: 8px;
+				width: 100%;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
 			}
 		}
 	}
