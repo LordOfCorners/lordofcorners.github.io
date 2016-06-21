@@ -10,6 +10,18 @@
 
 	{% endif %}
 
+	{% if include.video1 %}
+
+	<div class="row">
+		<div class="col">
+			<div class="embed-container">
+				<iframe src="https://player.vimeo.com/video/{{ include.video1 }}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			</div>
+		</div>
+	</div>
+
+	{% endif %}
+
 	{% if include.image2 and include.image3 %}
 
 	<div class="row">
