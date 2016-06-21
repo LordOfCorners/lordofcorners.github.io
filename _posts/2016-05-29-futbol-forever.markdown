@@ -3,7 +3,7 @@ layout: post
 title:  "Fútbol Forever"
 date:   2016-05-29 10:59:56 -0400
 categories: portfolio
-featured-image: "gamecentral/gc_thumbnail.png"
+featured-image: "ff/futbol-forever-gif.gif"
 project-tags: "Game Dev (Unity)"
 year: "2013–Present"
 ---
