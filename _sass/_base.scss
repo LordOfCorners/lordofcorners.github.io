@@ -25,17 +25,10 @@ body {
     font-kerning: normal;
 }
 
-html {
+html, body {
     height: 100%;
     overflow: auto;
 }
-
-body {
-    min-height: 100%;
-    overflow: auto;
-    position: relative;
-}
-
 
 
 /**

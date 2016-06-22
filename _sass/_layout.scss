@@ -182,21 +182,30 @@
  */
 .site-footer {
 	background-color: get-color( "site-color" );
-	bottom: 0;
 	border-top: 1px solid get-color( "grey-color-light" );
 	color: get-color( "background-color" );
 	font-size: rem(10px);
-	left: 0;
 	padding: 10px 0;
-	position: absolute;
-	right: 0;
 }
 
 /**
  * Page content
  */
+.page-container {  /* .page-container class is to keep footer at bottom of window
+				when there isn't a lot of content */
+	margin-bottom: -35px; /* equal to footer height */
+	min-height: 100%;
+}
+
+.page-container:after {
+	content: "";
+	display: block;
+	/* .push must be the same height as footer */
+	height: 35px;
+}
+
 .page-content {
-	padding: $spacing-unit 0 $spacing-unit*1.5 0;
+	padding: $spacing-unit*1.5 0 $spacing-unit 0;
 }
 
 .page-heading {
