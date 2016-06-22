@@ -23,3 +23,5 @@ We attached screw shields to the Arduinos to allow for a secure installation tha
 My other main task was to serve the score and inning number to the TVs mounted in the scoreboard using the `Raspberry Pi`. Rather than having a separate installation of Raspbian on each Raspberry Pi, we decided to mount Raspbian as a read only NFS on our server to allow for easy updates and to prevent file system corruptions. The Pis autoboot to full screen Chromium, and each Pi has a unique URL stored on their SD cards that gets written to RAM so that the Pis are able to load different pages even though they have indentical file systems. I wrote a shell script to automatically install Raspbian on the server and set up the Pis to netboot from it.
 
 {% include image-row.html image1="portfolio/gamecentral/scoreboard-back.jpg" %}
+
+[Full project credits](http://www.mediapost.com/digitaloohawards/winners/)
