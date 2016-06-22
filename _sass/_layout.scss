@@ -182,10 +182,14 @@
  */
 .site-footer {
 	background-color: get-color( "site-color" );
+	bottom: 0;
 	border-top: 1px solid get-color( "grey-color-light" );
-	font-size: rem(10px);
 	color: get-color( "background-color" );
+	font-size: rem(10px);
+	left: 0;
 	padding: 10px 0;
+	position: absolute;
+	right: 0;
 }
 
 /**
