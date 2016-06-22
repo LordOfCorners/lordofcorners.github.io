@@ -6,6 +6,7 @@ categories: portfolio
 featured-image: "ff/futbol-forever-gif.gif"
 project-tags: "Game Dev (Unity)"
 year: "2013–Present"
+excerpt: A 4-player, local multiplayer, slidey, desperate, inertia-guided shoutfest masquerading as a minimalist sports game.
 ---
 
 {% include image-row.html video1="163956413" %}

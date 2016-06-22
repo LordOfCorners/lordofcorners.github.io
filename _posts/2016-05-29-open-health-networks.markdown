@@ -6,6 +6,7 @@ categories: portfolio
 featured-image: "ohn/open-health-networks.gif"
 project-tags: "SMS, PHP, Ushahidi"
 year: "2012–2014"
+excerpt: Open Health Networks (OHN) is a system that allows individuals to send coded text messages which report the lack of medication, equipment and other concerns.
 ---
 
 {% include image-row.html video1="171666241" %}
