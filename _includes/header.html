@@ -1,0 +1,54 @@
+<header class="site-header">
+
+	<a href="{{ site.baseurl }}/">
+		<div id="logo" class="logo">
+
+			{% include svg/logo.svg %}
+
+		</div>
+	</a>
+
+	<div class="hamburger">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+</header>
+
+<div id="menu" class="menu">
+
+	<ul>
+		<!-- sort pages based on order variable and assign to new variable -->
+		{% assign pages = site.pages | sort:"order"  %}
+
+		{% for p in pages %}
+
+			{% if p.nav-title %}
+
+				<a href="{{ p.url | prepend: site.baseurl}}">
+
+					<li class="menu_pages">
+						{{ p.nav-title }}
+					</li>
+
+				</a>
+
+			{% endif %}
+
+		{% endfor %}
+
+				<a href="https://github.com/LordOfCorners">
+
+					<li class="menu_pages">
+						Github
+					</li>
+
+				</a>
+
+
+	</ul>
+
+</div>
+
