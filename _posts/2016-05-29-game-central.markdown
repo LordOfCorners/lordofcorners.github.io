@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Game Central"
-date:   2016-05-31 10:59:56 -0400
+date:   2016-06-22 10:59:56 -0400
 categories: portfolio
 featured-image: "gamecentral/gc_thumbnail_square.gif"
 project-tags: "Physical Computing"
