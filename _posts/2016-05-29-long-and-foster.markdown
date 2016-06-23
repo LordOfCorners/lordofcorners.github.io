@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Long & Foster"
+title:  "Long & Foster Redesign"
 date:   2016-05-30 10:59:56 -0400
 categories: portfolio
 featured-image: "lf/long-and-foster.gif"
