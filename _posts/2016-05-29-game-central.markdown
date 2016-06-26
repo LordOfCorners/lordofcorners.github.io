@@ -5,6 +5,7 @@ date:   2016-06-22 10:59:56 -0400
 categories: portfolio
 featured-image: "gamecentral/gc_thumbnail_square.gif"
 project-tags: "Physical Computing"
+awards: "2015 Gold ADDY"
 year: "April 2015"
 noindex: true
 ---

@@ -8,6 +8,7 @@ project-tags: "Blender, three.js"
 year: "December 2015"
 noindex: true
 excerpt: Every holiday season, RP3 Agency does a project that allows clients and friends to choose the allocation of donations to local charities. In 2015, we made a web-friendly virtual reality game using three.js and we created branded Google Cardboards to send to our clients.
+awards: "2015 Gold ADDY"
 ---
 
 **[Project Site](https://rptree.com/)**

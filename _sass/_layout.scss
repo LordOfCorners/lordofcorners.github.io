@@ -254,7 +254,7 @@
 			position: relative;
 
 			&_title {
-				background-color: get-color( "background-color" );
+				background-color: transparentize(get-color( "background-color" ),0.15);
 				border: 2px solid get-color( "site-color" );
 				bottom: 10px;
 				color: get-color( "site-color" );

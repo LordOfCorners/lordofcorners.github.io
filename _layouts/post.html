@@ -10,9 +10,14 @@ layout: default
     	<p class="post-meta">{{ page.project-tags }}</p>
     </div>
 
-	<div>
-		<p class="post-meta">{{ page.year }}</p>
-	</div>
+  	<div>
+  		<p class="post-meta">{{ page.year }}</p>
+  	</div>
+
+    {% if page.awards %}
+      <p class="post-meta">{{ page.awards }}</p>
+    {% endif %}
+
   </header>
 
   <div class="post-content" itemprop="articleBody">
