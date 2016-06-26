@@ -10,7 +10,7 @@ noindex: true
 ---
 To highlight `Norfolk Southern's` culture of innovation, `RP3` built a scoreboard for the club level they sponsor at the Washington National's stadium. The scoreboard uses G-scale model trains driven by stepper motors to indicate the stats of the game, such as strikes, balls, and outs.
 
-{% include image-row.html gifVideo1="SinfulPlushAstarte" image2="portfolio/gamecentral/scoreboard.jpg" image3="portfolio/gamecentral/scoreboard-process.jpg" %}
+{% include image-row.html image1="portfolio/gamecentral/scoreboard.jpg" image2="portfolio/gamecentral/gc_thumbnail_6x4.gif" image3="portfolio/gamecentral/scoreboard-process.jpg" %}
 
 Our partner `The Character Shop` fabricated the scoreboard, but it was my responsibility to interface the stepper driver with the `Node.js` software which we wrote at RP3 Agency. It connects to the same data feed that drives the main scoreboard at the stadium and sets our own scoreboard's state. An open source G-code parsing library called [grbl](https://github.com/grbl/grbl) that runs on `Arduinos` allowed us to send g-code serial messages from our server to the Arduinos, which then send the commands to the stepper drivers. For example, to send the Balls train out to show three balls, we can send `G1 F500 X63 \r` to tell the stepper motor to push the train out to position 63 at a feedrate of 500 mm/min.
 

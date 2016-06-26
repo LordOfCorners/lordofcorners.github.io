@@ -22,35 +22,11 @@
 
 	{% endif %}
 
-	{% if include.gifVideo1 %}
-
-	<div class="row">
-		<div class="col">
-			<img class="gfyitem" data-id="{{ include.gifVideo1 }}">
-		</div>
-	</div>
-
-	{% endif %}
-
 	{% if include.image2 and include.image3 %}
 
 	<div class="row">
 		<div class="col half">
 			<img src="{{ "/images/" | append: include.image2 }}" title="{{ include.image2 | remove: '.jpg' | remove: '.gif' | remove: '.png' | replace: '-', ' ' | capitalize }}"/>
-		</div>
-
-		<div class="col half">
-			<img src="{{ "/images/" | append: include.image3 }}" title="{{ include.image3 | remove: '.jpg' | remove: '.gif' | remove: '.png' | replace: '-', ' ' | capitalize }}"/>
-		</div>
-	</div>
-
-	{% endif %}
-
-	{% if include.gifVideo2 and include.image3 %}
-
-	<div class="row">
-		<div class="col half">
-			<img class="gfyitem" data-id="{{ include.gifVideo2 }}">
 		</div>
 
 		<div class="col half">
