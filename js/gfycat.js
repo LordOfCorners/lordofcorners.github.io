@@ -134,7 +134,6 @@ var gfyObject = function (gfyElem) {
         overlayCanvas.style.position = "absolute";
         overlayCanvas.style.left = "0";
         overlayCanvas.style.top = "0";
-        overlayCanvas.onclick = pauseClick;
         overlayCanvas.onmouseout = gfyMouseOut;
         overlayCanvas.onmouseover = gfyMouseOver;
         gfyRootElem.appendChild(overlayCanvas);
