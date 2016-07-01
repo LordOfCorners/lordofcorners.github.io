@@ -14,7 +14,7 @@ excerpt: Long & Foster, the nation's largest privately owned real estate company
 
 {% include image-row.html image4="portfolio/lf/houses.png" %}
 
-[RP3 Agency](https://rp3agency.com/) was hired to design the website, while RED, a company that specializes in a real estate based CMS, was hired for the production. My job was to work closely with our team to develop `resonsive HTML prototypes` to clearly represent our intentions for the site at any browser size.
+[RP3 Agency](https://rp3agency.com/) was hired to design the website, while RED, a company that specializes in a real estate based CMS, was hired for the production. My job was to work closely with our team to develop `responsive HTML prototypes` to clearly represent our intentions for the site at any browser size.
 
 {% include image-row.html image2="portfolio/lf/long-and-foster-wide.gif" image3="portfolio/lf/buying-priorities.png" %}
 
