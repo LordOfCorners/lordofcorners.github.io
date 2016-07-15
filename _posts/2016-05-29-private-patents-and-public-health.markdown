@@ -4,25 +4,17 @@ title:  "Private Patents and Public Health"
 date:   2016-06-22 10:59:56 -0400
 categories: portfolio
 extraClasses: long-title
-featured-image: "gamecentral/gc_thumbnail_square.gif"
+featured-image: "hai/private-patents-and-public-health.gif"
 project-tags: "WordPress, Advocacy"
 year: "July 2016"
 noindex: true
 ---
-To highlight `Norfolk Southern's` culture of innovation, `RP3` built a scoreboard for the club level they sponsor at the Washington National's stadium. The scoreboard uses G-scale model trains driven by stepper motors to indicate the stats of the game, such as strikes, balls, and outs.
 
-{% include image-row.html image1="portfolio/gamecentral/scoreboard.jpg" image2="portfolio/gamecentral/gc_thumbnail_6x4.gif" image3="portfolio/gamecentral/scoreboard-process.jpg" %}
+**[Project Site](http://accesstomedicines.org/)**
 
-Our partner `The Character Shop` fabricated the scoreboard, but it was my responsibility to interface the stepper driver with the `Node.js` software which we wrote at RP3 Agency. It connects to the same data feed that drives the main scoreboard at the stadium and sets our own scoreboard's state. An open source G-code parsing library called [grbl](https://github.com/grbl/grbl) that runs on `Arduinos` allowed us to send g-code serial messages from our server to the Arduinos, which then send the commands to the stepper drivers. For example, to send the Balls train out to show three balls, we can send `G1 F500 X63 \r` to tell the stepper motor to push the train out to position 63 at a feedrate of 500 mm/min.
+The world's out-of-balance patent system blocks access to new medicines for many. In partnership with Health Action International and Open Society Foundations, Little Cloud Collective (Claudia Bernett, Jennifer Matsuomoto, and I) designed and built this narrative website to educate healthcare advocates, consumers, policymakers, and journalists about the complex relationship between patents and medicines. An initial scroll provides an overview of the issues, while users may choose to dig in deeper by navigating through the accordions in each section. Though it's on a single page, each infographic/section is individually shareable on Facebook and Twitter. The site also provides links to many related resources including Ellen ’t Hoen's book *Private Patents and Public Health: Changing Intellectual Property Rules for Access to Medicines*, which launched in conjunction with this site.
 
-If the optical limit switches that help the motors locate the zero position were to fail, the motors would force the trains into the scoreboard. Should any sensor fail, grbl provides a serial message, and when that happens, we can automatically disable that train and get notified via a scoreboard `Slack bot`. Another challenge that presented itself during installation was that the electromagnetic interferance created by all nine of the stepper drivers/motors ruined the sensor values, and the code that worked on our test setup in the office was failing. This was solved by insulating the sensor cables.
+One particular challenge in terms of development was that we wanted to be able to share individual sections/infographics from the page, but Facebook and Twitter use a page's Open Graph meta tags to populate shares, and there cannot be more than one set of data per page. To get around this, I set up a unique page for each section/infographic which serves the appropriate Open Graph meta tags, but redirects immediately to the home page and scrolls to the appropriate section if the user-agent is not a Twitter or Facebook crawler.
 
-We attached screw shields to the Arduinos to allow for a secure installation that could still be easily repaired if needed. I modeled and `3D printed` an RP3 branded case for the Arduinos + screw shields.
+{% include image-row.html image1="portfolio/hai/hai-hero.png" image2="portfolio/hai/private-patents-and-public-health-wide.gif" image3="portfolio/hai/the-cost.png" %}
 
-{% include image-row.html image2="portfolio/gamecentral/rp3-arduino-model.jpg" image3="portfolio/gamecentral/rp3-arduino-case.gif" %}
-
-We also needed to serve the score and inning number to the TVs mounted in the scoreboard using the `Raspberry Pi`. Rather than having a separate installation of Raspbian on each Raspberry Pi, we decided to mount Raspbian as a read only NFS on our server to allow for easy updates and to prevent file system corruptions. The Pis autoboot to full screen Chromium, and each Pi has a unique URL stored on their SD cards that gets written to RAM so that the Pis are able to load different pages even though they have indentical file systems. I wrote a shell script to automatically install Raspbian on the server and set up the Pis to netboot from it.
-
-{% include image-row.html image1="portfolio/gamecentral/scoreboard-back.jpg" %}
-
-[Full project credits](http://www.mediapost.com/digitaloohawards/winners/)
