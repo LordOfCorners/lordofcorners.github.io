@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Game Central"
+title:  "Private Patents and Public Health"
 date:   2016-06-22 10:59:56 -0400
 categories: portfolio
+extraClasses: long-title
 featured-image: "gamecentral/gc_thumbnail_square.gif"
-project-tags: "Physical Computing"
-awards: "2015 Gold ADDY"
-year: "April 2015"
+project-tags: "WordPress, Advocacy"
+year: "July 2016"
 noindex: true
 ---
 To highlight `Norfolk Southern's` culture of innovation, `RP3` built a scoreboard for the club level they sponsor at the Washington National's stadium. The scoreboard uses G-scale model trains driven by stepper motors to indicate the stats of the game, such as strikes, balls, and outs.

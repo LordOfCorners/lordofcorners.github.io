@@ -273,6 +273,10 @@
 				position: absolute;
 				text-align: left;
 				text-transform: uppercase;
+
+				&.long-title {
+					max-width: 170px;
+				}
 			}
 		}
 }
