@@ -243,8 +243,18 @@
 .portfolio {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	margin-bottom: 2em;
+	justify-content: left;
+	margin: 0 auto 2em auto;
+	max-width: 332px;
+
+	@media screen and (min-width: 694px) {
+		max-width: 664px;
+	}
+
+	@media screen and (min-width: 1056px) {
+		max-width: 100%;
+	}
+
 
 		&_item {
 			display: block;
