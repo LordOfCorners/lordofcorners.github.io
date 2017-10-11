@@ -9,7 +9,7 @@ awards: "2015 Gold ADDY"
 year: "April 2015"
 noindex: true
 ---
-To highlight `Norfolk Southern's` culture of innovation, `RP3` built a scoreboard for the club level they sponsor at the Washington National's stadium. The scoreboard uses G-scale model trains driven by stepper motors to indicate the stats of the game, such as strikes, balls, and outs.
+To highlight `Norfolk Southern's` culture of innovation, `RP3 Agency` built a scoreboard for the club level they sponsor at the Washington Nationals' stadium. The scoreboard uses G-scale model trains driven by stepper motors to indicate the stats of the game, such as strikes, balls, and outs.
 
 {% include image-row.html image1="portfolio/gamecentral/scoreboard.jpg" image2="portfolio/gamecentral/gc_thumbnail_6x4.gif" image3="portfolio/gamecentral/scoreboard-process.jpg" %}
 
