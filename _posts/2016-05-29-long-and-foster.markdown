@@ -10,7 +10,7 @@ noindex: true
 excerpt: Long & Foster, the nation's largest privately owned real estate company, was in need of a major redesign for their site. My primary role in this project was in building out prototypes.
 ---
 
-[Long & Foster](http://www.longandfoster.com/), the nation's largest privately owned real estate company, was in need of a major redesign for their site. This was a year-long project that I saw through from strategy and branding to launch. Because we were working as a small team, I had opportunities to do a lot outside of my typical job description, such as a content audit, but my primary role in this project was in building out prototypes.
+[Long & Foster](http://www.longandfoster.com/), the nation's largest privately owned real estate company, was in need of a major redesign for their site. This was a year-long project, which I saw through from strategy and branding to launch. Because we were working as a small team, I had opportunities to do a lot outside of my typical job description, such as a content audit, but my primary role in this project was in building out prototypes.
 
 {% include image-row.html image4="portfolio/lf/houses.png" %}
 
