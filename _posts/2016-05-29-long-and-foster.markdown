@@ -18,6 +18,6 @@ excerpt: Long & Foster, the nation's largest privately owned real estate company
 
 {% include image-row.html image2="portfolio/lf/long-and-foster-wide.gif" image3="portfolio/lf/buying-priorities.png" %}
 
-One part of the site that involved a lot of `UX thinking` and `iterative prototyping` was a priority sorting tool (demonstrated above) that buyers and sellers can use to figure out what their needs are and share them with a Long & Foster agent. This helps generate higher quality leads for the client because the agents gain a better sense of the customer's needs than a traditional lead form.
+One part of the site that involved a lot of `UX thinking` and `iterative prototyping` was a priority sorting tool (demonstrated above) that buyers and sellers can use to figure out what their needs are and share them with a Long & Foster agent. This helps generate higher quality leads for the client because the agents gain a better sense of the customer's needs than a traditional lead form. `The finished site saw a 4x increase in leads, with hundreds of thousands of users and more than 10,000 agents.`
 
 {% include image-row.html image1="portfolio/lf/communities.png" %}
