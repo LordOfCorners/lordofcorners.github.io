@@ -5,14 +5,14 @@ date: 2017-05-30 10:59:56 -0400
 categories: portfolio
 featured-image: 'vanguard/vanguard.png'
 project-tags: 'Vue, Chart.js, AA Accessibility'
-year: '2018-2019'
+year: '2018–2019'
 noindex: true
 excerpt: Vanguard needed to redesign their website in order to meet their financial advisors' needs by giving them quick access to the relevant products and information they were looking for. My team collaborated with our designers, producers, and strategists to deliver a WCAG 2.1 AA compliant front-end component library using Vue.
 ---
 
 **[Project Site](https://advisors.vanguard.com/advisors-home)**
 
-Vanguard needed to redesign their website in order to meet their financial advisors' needs by giving them quick access to the relevant products and information they were looking for. My team collaborated with our designers, producers, and strategists to deliver a `WCAG 2.1 AA compliant` front-end `component library` using `Vue`. Vanguard's in-house team then integrated the site with their existing back end. I set up our development environment using `Vue CLI`, `Prettier`, `ESLint`, `stylelint`, `PostCSS (Autoprefixer)`, `Sass`, and `pre-commit hooks`.
+Vanguard needed to redesign their website in order to meet their financial advisors' needs by giving them quick access to the relevant products and information they were looking for. My team at Huge collaborated with our designers, producers, and strategists to deliver a `WCAG 2.1 AA compliant` front-end `component library` using `Vue`. Vanguard's in-house team then integrated the site with their existing back end. I set up our development environment using `Vue CLI`, `Prettier`, `ESLint`, `stylelint`, `PostCSS (Autoprefixer)`, `Sass`, and `pre-commit hooks`.
 
 {% include image-row.html image1="portfolio/vanguard/double-chart.png" %}
 

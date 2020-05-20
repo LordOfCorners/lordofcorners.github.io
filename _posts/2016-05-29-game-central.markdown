@@ -1,14 +1,15 @@
 ---
 layout: post
-title:  "Game Central"
-date:   2016-06-22 10:59:56 -0400
+title: 'Game Central'
+date: 2016-06-22 10:59:56 -0400
 categories: portfolio
-featured-image: "gamecentral/norfolk-southern-game-central.png"
-project-tags: "Physical Computing"
-awards: "2015 Gold ADDY"
-year: "April 2015"
+featured-image: 'gamecentral/norfolk-southern-game-central.png'
+project-tags: 'Physical Computing'
+awards: '2015 Gold ADDY'
+year: 'April 2015'
 noindex: true
 ---
+
 To highlight `Norfolk Southern's` culture of innovation, `RP3 Agency` built a scoreboard for the club level Norfolk Southern sponsors at the Washington Nationals' stadium. The scoreboard uses G-scale model trains driven by stepper motors to indicate the stats of the game, such as strikes, balls, and outs.
 
 {% include image-row.html image1="portfolio/gamecentral/scoreboard.jpg" image2="portfolio/gamecentral/gc_thumbnail_6x4.gif" image3="portfolio/gamecentral/scoreboard-process.jpg" %}
@@ -21,7 +22,7 @@ We attached screw shields to the Arduinos to allow for a secure installation tha
 
 {% include image-row.html image2="portfolio/gamecentral/rp3-arduino-model.jpg" image3="portfolio/gamecentral/rp3-arduino-case.gif" %}
 
-We also needed to serve the score and inning number to the TVs mounted in the scoreboard using the `Raspberry Pi`. Rather than having a separate installation of Raspbian on each Raspberry Pi, we decided to mount Raspbian as a read only NFS on our server to allow for easy updates and to prevent file system corruptions. The Pis autoboot to full screen Chromium, and each Pi has a unique URL stored on their SD cards that gets written to RAM so that the Pis are able to load different pages even though they have indentical file systems. I wrote a shell script to automatically install Raspbian on the server and set up the Pis to netboot from it.
+We also needed to serve the score and inning number to the TVs mounted in the scoreboard using the `Raspberry Pi`. Rather than having a separate installation of Raspbian on each Raspberry Pi, we decided to mount Raspbian as a read only NFS on our server to allow for easy updates and to prevent file system corruptions. The Pis autoboot to full screen Chromium, and each Pi has a unique URL stored on their SD cards that gets written to RAM so that the Pis are able to load different pages even though they have identical file systems. I wrote a shell script to automatically install Raspbian on the server and set up the Pis to netboot from it.
 
 {% include image-row.html image1="portfolio/gamecentral/scoreboard-back.jpg" %}
 
