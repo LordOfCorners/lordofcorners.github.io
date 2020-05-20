@@ -3,7 +3,7 @@ layout: post
 title:  "Open Health Networks"
 date:   2016-05-29 10:59:56 -0400
 categories: portfolio
-featured-image: "ohn/open-health-networks.gif"
+featured-image: "ohn/open-health-networks.png"
 project-tags: "SMS, PHP, Ushahidi"
 year: "2012–2014"
 excerpt: Open Health Networks (OHN) is a system that allows individuals to send coded text messages which report the lack of medication, equipment and other concerns.
@@ -12,8 +12,6 @@ excerpt: Open Health Networks (OHN) is a system that allows individuals to send 
 {% include image-row.html video1="171666241" %}
 
 **[Project Site](http://vigilanciaysalud.com/plataforma/)**
-<br>
-**[Project Documentation/Code](http://cegss.osf.parsons.edu/)**
 
 [Open Health Networks (OHN)](http://vigilanciaysalud.com/plataforma/) is a system that allows individuals to `send coded text messages, which report the lack of medication and equipment as well as other issues`. The goal is to increase citizen empowerment and knowledge of individual health care rights and to open up the communication channels between indigenous communities, [CEGSS (Centro de Estudios para la Equidad y Gobernanza en los Sistemas de Salud)](http://cegss.org.gt/) and the government. OHN was developed as part of the Parsons/Open Society Foundations Fellowship.
 

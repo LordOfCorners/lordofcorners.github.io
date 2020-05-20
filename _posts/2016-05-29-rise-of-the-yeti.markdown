@@ -3,7 +3,7 @@ layout: post
 title:  "Rise of the Yeti"
 date:   2016-05-31 10:59:56 -0400
 categories: portfolio
-featured-image: "yeti/rise-of-yeti.gif"
+featured-image: "yeti/yeti.png"
 project-tags: "Blender, Three.js"
 year: "December 2015"
 noindex: true
