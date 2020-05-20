@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Rise of the Yeti"
-date:   2016-05-31 10:59:56 -0400
+title: 'Rise of the Yeti'
+date: 2016-05-31 10:59:56 -0400
 categories: portfolio
-featured-image: "yeti/yeti.png"
-project-tags: "Blender, Three.js"
-year: "December 2015"
+featured-image: 'yeti/yeti.png'
+project-tags: 'Blender, Three.js'
+year: 'December 2015'
 noindex: true
 excerpt: Every holiday season, RP3 Agency does a project that allows clients and friends to choose the allocation of donations to local charities. In 2015, we made a web-friendly virtual reality game using Three.js and we created branded Google Cardboards to send to our clients.
-awards: "2015 Gold ADDY"
+awards: '2015 Gold ADDY'
 ---
 
 **[Project Site](https://rptree.com/)**
