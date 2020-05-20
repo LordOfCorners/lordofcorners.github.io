@@ -3,7 +3,7 @@ layout: post
 title:  "Long & Foster Redesign"
 date:   2016-05-30 10:59:56 -0400
 categories: portfolio
-featured-image: "lf/long-and-foster.gif"
+featured-image: "lf/long-and-foster.png"
 project-tags: "Website Redesign"
 year: "2015–2016"
 noindex: true

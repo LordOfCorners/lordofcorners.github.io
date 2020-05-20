@@ -3,7 +3,7 @@ layout: post
 title:  "HRCI UX Overhaul"
 date:   2017-05-30 10:59:56 -0400
 categories: portfolio
-featured-image: "hrci/hrci.gif"
+featured-image: "hrci/human-resources-certification-institute-redesign.png"
 project-tags: "UX Design, Sketch, InVision, Front-End Dev, Website Redesign"
 year: "2016-2017"
 noindex: true

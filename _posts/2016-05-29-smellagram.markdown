@@ -3,7 +3,7 @@ layout: post
 title:  "Smellagram"
 date:   2013-05-30 10:59:56 -0400
 categories: portfolio
-featured-image: "smell/smellagram.gif"
+featured-image: "smell/smellagram.png"
 project-tags: "UX, Wireframes, Product Design"
 year: "2014"
 excerpt:
