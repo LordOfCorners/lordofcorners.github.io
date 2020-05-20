@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 'Grant Solutions'
-date: 2017-06-01 10:59:56 -0400
+title: 'State.gov'
+date: 2017-05-30 11:59:56 -0400
 categories: portfolio
-featured-image: 'gs/grant-solutions.png'
-project-tags: 'React, Redux, REST APIs, Jest, Thunks, Mockoon, AA Accessibility'
-year: '2019–2020'
+featured-image: 'state/state.png'
+project-tags: 'WordPress, Advanced Custom Fields, Pantheon'
+year: '2018'
 noindex: true
 excerpt:
 ---
@@ -16,7 +16,7 @@ For full configurability, I created a React application from scratch using `webp
 
 I used `Redux Thunk` and `Axios` to fetch and store data from our Java microservices. By using thunks to dispatch asynchronous actions, we use a Redux action to trigger a call to the API, and then fire a success or fail action depending on the response from the server. The reducer then sets variables in the store so the application always knows if data is currently loading and if the data loaded successfully. This is useful for loading states across the application. Because every page needs to hit the server to fill in the data, I used a redux action to store the API response on a successful call, resulting in no loading time when revisiting a page.
 
-We used `Flow` (similar to TypeScript) to ensure that components were receiving props of the correct type. This improves readability for someone coming onto the project and helps with debugging.
+We used Flow (similar to TypeScript) to ensure that components were receiving props of the correct type. This improves readability for someone coming onto the project and helps with debugging.
 
 We used `React Hooks` throughout the project, but used a custom hook that uses interceptors to refresh the authorization token if necessary prior to making a request, and to handle specific server error responses in a uniform way across all API calls.
 
