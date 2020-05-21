@@ -7,7 +7,7 @@ featured-image: 'state/state.png'
 project-tags: 'WordPress, Full-Stack, PHP, Advanced Custom Fields, Pantheon'
 year: '2018'
 noindex: true
-excerpt:
+excerpt: I was brought on as a Senior Engineer to help Huge with the back-end portion of a WordPress redesign for the US Department of State. As an experienced front-end developer, I was able to shift back and forth between teams as needed
 ---
 
 **[Project Site](http://state.gov)**
