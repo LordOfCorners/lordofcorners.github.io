@@ -43,6 +43,10 @@ body {
   overflow: auto;
 }
 
+body.open {
+  overflow: hidden;
+}
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */

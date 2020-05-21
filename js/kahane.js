@@ -1,5 +1,4 @@
 var body = document.body;
-var logo = document.getElementById('logo');
 var nav = document.getElementById('nav');
 var navItems = document.querySelectorAll('.menu_pages');
 var lastNavItem = navItems[navItems.length - 1];
@@ -24,13 +23,13 @@ document.addEventListener('keydown', function (event) {
   }
 
   if (event.shiftKey) {
-    /* shift + tab */ if (document.activeElement === logo) {
+    /* shift + tab */ if (document.activeElement === nav) {
       lastNavItem.focus();
       event.preventDefault();
     }
   } /* tab */ else {
     if (document.activeElement === lastNavItem) {
-      logo.focus();
+      nav.focus();
       event.preventDefault();
     }
   }
