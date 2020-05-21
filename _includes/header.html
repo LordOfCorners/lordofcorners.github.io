@@ -1,60 +1,44 @@
-<header class="site-header">
+<nav>
+  <header class="site-header">
+    <a href="{{ site.baseurl }}/">
+      <div id="logo" class="logo">
+        {% include svg/logo.svg %}
+      </div>
+    </a>
 
-	<a href="{{ site.baseurl }}/">
-		<div id="logo" class="logo">
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
 
-			{% include svg/logo.svg %}
+  <div id="menu" class="menu">
+    <ul>
+      <!-- sort pages based on order variable and assign to new variable -->
+      {% assign pages = site.pages | sort:"order" %} {% for p in pages %} {% if
+      p.nav-title %}
 
-		</div>
-	</a>
+      <a href="{{ p.url | prepend: site.baseurl}}">
+        <li class="menu_pages">
+          {{ p.nav-title }}
+        </li>
+      </a>
 
-	<div class="hamburger">
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-	</div>
+      {% endif %} {% endfor %}
 
-</header>
+      <a href="https://www.linkedin.com/in/michaelkahane">
+        <li class="menu_pages">
+          LinkedIn
+        </li>
+      </a>
 
-<div id="menu" class="menu">
-
-	<ul>
-		<!-- sort pages based on order variable and assign to new variable -->
-		{% assign pages = site.pages | sort:"order"  %}
-
-		{% for p in pages %}
-
-			{% if p.nav-title %}
-
-				<a href="{{ p.url | prepend: site.baseurl}}">
-
-					<li class="menu_pages">
-						{{ p.nav-title }}
-					</li>
-
-				</a>
-
-			{% endif %}
-
-		{% endfor %}
-
-				<a href="https://www.linkedin.com/in/michaelkahane">
-
-					<li class="menu_pages">
-						LinkedIn
-					</li>
-
-				</a>
-
-				<a href="/kahane_resume.pdf">
-
-					<li class="menu_pages">
-						Resume
-					</li>
-
-				</a>
-
-	</ul>
-
-</div>
+      <a href="/kahane_resume.pdf">
+        <li class="menu_pages">
+          Resume
+        </li>
+      </a>
+    </ul>
+  </div>
+</nav>

@@ -16,7 +16,8 @@ excerpt: I am a freelance creative technologist. I develop platforms that engage
 
 					<div class="portfolio_item_image">
 
-						<img src="{{ "/images/portfolio/" | append: post.featured-image }}"></img>
+						<img src="{{ "/images/portfolio/" | append: post.featured-image }}" alt="{{ post.featured-image | remove: '.jpg'
+						| remove: '.gif' | remove: '.png' | replace: '-', ' ' | capitalize }}"></img>
 
 					</div>
 
