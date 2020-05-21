@@ -2,42 +2,41 @@ var body = document.body;
 var nav = document.getElementById('nav');
 var navItems = document.querySelectorAll('.menu_pages');
 var lastNavItem = navItems[navItems.length - 1];
-var KEYCODE_TAB = 9;
 
 nav.addEventListener(
   'click',
-  function () {
-    event.preventDefault();
+  function (e) {
+    e.preventDefault();
     body.classList.toggle('open');
   },
   false
 );
 
-document.addEventListener('keydown', function (event) {
-  if (event.key === 'Escape') body.classList.remove('open');
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape') body.classList.remove('open');
 
-  var isTabPressed = event.key === 'Tab' || event.key === 'Tab';
+  var isTabPressed = e.key === 'Tab' || e.key === 'Tab';
 
   if (!isTabPressed) {
     return;
   }
 
-  if (event.shiftKey) {
+  if (e.shiftKey) {
     /* shift + tab */ if (document.activeElement === nav) {
       lastNavItem.focus();
-      event.preventDefault();
+      e.preventDefault();
     }
   } /* tab */ else {
     if (document.activeElement === lastNavItem) {
       nav.focus();
-      event.preventDefault();
+      e.preventDefault();
     }
   }
 });
 
-nav.addEventListener('keyup', function (event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
+nav.addEventListener('keyup', function (e) {
+  if (e.keyCode === 13) {
+    e.preventDefault();
     nav.click();
   }
 });
