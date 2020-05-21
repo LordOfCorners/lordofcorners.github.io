@@ -7,7 +7,7 @@ featured-image: 'animatronic/animatronic-show.png'
 project-tags: 'Node, Arduino'
 year: '2019'
 noindex: true
-excerpt:
+excerpt: In June 2019 at Huge we built an animatronic show for our client to showcase their product.
 ---
 
 In June 2019 at Huge we built an animatronic show for our client to showcase their product. The tech lead, under major time constraints and knowing I had worked with `Arduino` and `stepper motors` in the past, pulled me onto the project. The project consisted of 2 vertical stepper gantries each mounted onto a horizontal stepper gantry to provide both X and Y range of motion for the gantry plates. There would be magnets on the gantry plates and it would all be covered by a sheet of black acrylic. Magnetic characters would be attached on top of the acrylic made to move around and tip over a cup as if by magic. All of this was behind a transparent LED display which helps tell the story with animations.
