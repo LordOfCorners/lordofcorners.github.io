@@ -20,6 +20,6 @@ I wrote a gantry class in Node that takes a serial port and name in the construc
 
 The main part of the Node app uses `Electron` to display the video for the transparent LED display, and allows us to cut to different parts of it when we start and end our animatronic scene, as well as trigger the motors to perform different movements based on the the timecode of the video.
 
-We had a problem with the gantries sliding down when mounted vertically. The scoreboard gantries were parallel to the floor so I never had to worry about gravity. By default the steppers don't remain powered when not in use, resulting in gravity forcing them to spin on their own. This was solved by setting the "step idle delay" setting to 255 which keeps the axes enabled all the time, thereby hold position.
+We had a problem with the gantries sliding down when mounted vertically. The scoreboard gantries were horizontal so I never had to worry about gravity. By default the steppers don't remain powered when not in use, resulting in gravity forcing them to spin on their own. This was solved by setting the "step idle delay" setting to 255 which keeps the axes enabled all the time, thereby hold position.
 
 {% include image-row.html image2="portfolio/animatronic/arduino.png" image3="portfolio/animatronic/fabrication.png" htmlVideo1="portfolio/animatronic/final.mp4" %}
