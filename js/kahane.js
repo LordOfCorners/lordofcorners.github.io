@@ -28,12 +28,7 @@ document.addEventListener('keydown', function (event) {
     }
   } /* tab */ else {
     if (document.activeElement === lastNavItem) {
-      console.log('test');
-      console.log(logo);
-      window.setTimeout(function () {
-        logo.focus();
-      }, 200);
-
+      logo.focus();
       event.preventDefault();
     }
   }
