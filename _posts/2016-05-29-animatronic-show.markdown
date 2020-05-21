@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Animatronic Show'
-date: 2017-5-31 11:59:56 -0400
+date: 2017-5-31 10:58:56 -0400
 categories: portfolio
 featured-image: 'animatronic/animatronic-show.png'
 project-tags: 'Node, Arduino'

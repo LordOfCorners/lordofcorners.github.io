@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Private Patents and Public Health'
-date: 2016-06-22 10:59:56 -0400
+date: 2016-05-10 10:59:56 -0400
 categories: portfolio
 extraClasses: long-title
 featured-image: 'hai/private-patents-and-public-health.png'

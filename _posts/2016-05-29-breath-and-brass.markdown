@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Breath & Brass"
-date:   2016-05-29 10:59:56 -0400
+title: 'Breath & Brass'
+date: 2014-05-29 10:59:56 -0400
 categories: portfolio
-featured-image: "bb/breath-and-brass.png"
-project-tags: "Arduino, openFrameworks"
-year: "December 2013"
+featured-image: 'bb/breath-and-brass.png'
+project-tags: 'Arduino, openFrameworks'
+year: 'December 2013'
 excerpt: “Breath and Brass” visualizes the act of musical performance—both the physicality of the musician’s breathing and the technical nature of the generated music. It newly illuminates the interplay between the instruments and incorporates a more conscious awareness of the musician’s exertion into the audience’s experience.
 ---
 

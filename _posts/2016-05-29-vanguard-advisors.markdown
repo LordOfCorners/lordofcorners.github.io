@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Vanguard Advisors'
-date: 2017-05-31 10:59:56 -0400
+date: 2017-5-31 10:58:56 -0400
 categories: portfolio
 featured-image: 'vanguard/vanguard.png'
 project-tags: 'Vue, Chart.js, Data Visualization, AA Accessibility'
