@@ -1,12 +1,12 @@
 <nav>
   <header class="site-header">
-    <a href="{{ site.baseurl }}/">
-      <div id="logo" class="logo">
+    <a id="logo" href="{{ site.baseurl }}/">
+      <div class="logo">
         {% include svg/logo.svg %}
       </div>
     </a>
 
-    <div class="hamburger">
+    <div id="nav" class="hamburger" tabindex="0">
       <span class="burger-bar"></span>
       <span class="burger-bar"></span>
       <span class="burger-bar"></span>
@@ -20,22 +20,22 @@
       {% assign pages = site.pages | sort:"order" %} {% for p in pages %} {% if
       p.nav-title %}
 
-      <a href="{{ p.url | prepend: site.baseurl}}">
-        <li class="menu_pages">
+      <a href="{{ p.url | prepend: site.baseurl}}" class="menu_pages">
+        <li>
           {{ p.nav-title }}
         </li>
       </a>
 
       {% endif %} {% endfor %}
 
-      <a href="https://www.linkedin.com/in/michaelkahane">
-        <li class="menu_pages">
+      <a href="https://www.linkedin.com/in/michaelkahane" class="menu_pages">
+        <li>
           LinkedIn
         </li>
       </a>
 
-      <a href="/kahane_resume.pdf">
-        <li class="menu_pages">
+      <a href="/kahane_resume.pdf" class="menu_pages">
+        <li>
           Resume
         </li>
       </a>
