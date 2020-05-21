@@ -7,7 +7,7 @@ featured-image: 'gs/grant-solutions.png'
 project-tags: 'React, Redux, REST APIs, Jest, Thunks, Mockoon, AA Accessibility'
 year: '2019–2020'
 noindex: true
-excerpt:
+excerpt: Huge was hired to build a web app for the Department of Health and Human Services that allows grantees and grantors to manage grants throughout the entire funding lifecycle. When I rolled onto the project, a previous team at Huge had already built a component library using `React`. My team's task was to build out the application using real data.
 ---
 
 Huge was hired to build a web app for the Department of Health and Human Services that allows grantees and grantors to manage grants throughout the entire funding lifecycle. When I rolled onto the project, a previous team at Huge had already built a component library using `React`. My team's task was to build out the application using real data. I led the front-end portion of this which involved constructing pages using components from the library, and calling `REST APIs` to fill the application with data from the Java microservices made by back-end teammates.

@@ -1,0 +1,19 @@
+---
+layout: post
+title: 'State.gov'
+date: 2017-05-30 11:59:56 -0400
+categories: portfolio
+featured-image: 'state/state.png'
+project-tags: 'WordPress, Full-Stack, PHP, Advanced Custom Fields, Pantheon'
+year: '2018'
+noindex: true
+excerpt:
+---
+
+**[Project Site](http://state.gov)**
+
+I was brought on as a Senior Engineer to help Huge with the back-end portion of a `WordPress` redesign for the US Department of State. As an experienced front-end developer, I was able to shift back and forth between teams as needed, unblocking myself whenever I couldn't integrate the data because the UI didn't exist yet. We created a `custom theme` and `custom plugin`. My main responsibility on the back-end side (`PHP`) was to use a combination of [Advanced Custom Fields](https://www.advancedcustomfields.com/), `Custom Post Types`, and `Custom Taxonomies` to create templates with customized editable fields in the CMS. Then I integrated the data provided in these fields into the UI, ensuring it would fail silently if a piece of information was missing and sanitizing the user input to ensure it was safe. On the front-end side I built various aspects of the UI. I also queried the database as needed, such as getting the top 5 tagged terms on a specific custom post type for use in a tag cloud, listing out the 3 most recent articles from a particular taxonomy, or building a nav. We used `Pantheon` to host our development environments and handle database migrations.
+
+One of the more challenging aspects on the front end was building out a country selection dropdown. Without any pre-built select packages that could do everything we wanted, we went with a plugin called Chosen to get us some of the way there. I made a number of modifications such as getting it to break up the dropdown into sections by alphabet and displaying the letter to the side, making it navigate to a new page on click rather than function as a traditional select box, and changing the sort order to ensure results that start with the letter typed appear first.
+
+{% include image-row.html image1="portfolio/state/human-rights-report.png" image2="portfolio/state/countries-feed.png"  image3="portfolio/state/country-search.png" %}
