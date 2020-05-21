@@ -20,6 +20,6 @@ We used `Flow` (similar to TypeScript) to ensure that components were receiving 
 
 We used `React Hooks` throughout the project, but used a custom hook that uses interceptors to refresh the authorization token if necessary prior to making a request, and to handle specific server error responses in a uniform way across all API calls.
 
-We were working alongside in-house client teams. One of their teams built out two pages in our React app, so I provided support for them as needed. I had one engineer working with me on the front end, whom I supported by providing guidance as needed to keep us on track to finish within our sprint, while giving her the space to figure things out on her own.
+We were working alongside in-house client teams. One of their teams built out two pages in our React app, so I provided support for them as needed. I had one engineer working with me on the front-end, whom I supported by providing guidance as needed to keep us on track to finish within our sprint, while giving her the space to figure things out on her own.
 
 {% include image-row.html image1="portfolio/gs/grants-list.png" image2="portfolio/gs/grant-detail.png" image3="portfolio/gs/grant-reports.png" %}
