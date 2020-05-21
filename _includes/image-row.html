@@ -5,7 +5,8 @@
     <div class="col">
       <img src="{{ "/images/" | append: include.image1 }}" title="{{
       include.image1 | remove: '.jpg' | remove: '.gif' | remove: '.png' |
-      replace: '-', ' ' | capitalize }}"/>
+      replace: '-', ' ' | capitalize }}" alt="{{ include.image1 | remove: '.jpg'
+      | remove: '.gif' | remove: '.png' | replace: '-', ' ' | capitalize }}"/>
     </div>
   </div>
 
@@ -31,13 +32,15 @@
     <div class="col half">
       <img src="{{ "/images/" | append: include.image2 }}" title="{{
       include.image2 | remove: '.jpg' | remove: '.gif' | remove: '.png' |
-      replace: '-', ' ' | capitalize }}"/>
+      replace: '-', ' ' | capitalize }}" alt="{{ include.image2 | remove: '.jpg'
+      | remove: '.gif' | remove: '.png' | replace: '-', ' ' | capitalize }}"/>
     </div>
 
     <div class="col half">
       <img src="{{ "/images/" | append: include.image3 }}" title="{{
       include.image3 | remove: '.jpg' | remove: '.gif' | remove: '.png' |
-      replace: '-', ' ' | capitalize }}"/>
+      replace: '-', ' ' | capitalize }}" alt="{{ include.image3 | remove: '.jpg'
+      | remove: '.gif' | remove: '.png' | replace: '-', ' ' | capitalize }}"/>
     </div>
   </div>
 
@@ -58,7 +61,8 @@
     <div class="col">
       <img src="{{ "/images/" | append: include.image4 }}" title="{{
       include.image4 | remove: '.jpg' | remove: '.gif' | remove: '.png' |
-      replace: '-', ' ' | capitalize }}"/>
+      replace: '-', ' ' | capitalize }}" alt="{{ include.image4 | remove: '.jpg'
+      | remove: '.gif' | remove: '.png' | replace: '-', ' ' | capitalize }}"/>
     </div>
   </div>
 
