@@ -4,7 +4,7 @@ title: 'Vanguard Advisors'
 date: 2017-05-31 10:59:56 -0400
 categories: portfolio
 featured-image: 'vanguard/vanguard.png'
-project-tags: 'Vue, Chart.js, AA Accessibility'
+project-tags: 'Vue, Chart.js, Data Visualization, AA Accessibility'
 year: '2018–2019'
 noindex: true
 excerpt: Vanguard needed to redesign their website in order to meet their financial advisors' needs by giving them quick access to the relevant products and information they were looking for. My team collaborated with our designers, producers, and strategists to deliver a WCAG 2.1 AA compliant front-end component library using Vue.
