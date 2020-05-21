@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "HRCI UX Overhaul"
-date:   2017-05-30 10:59:56 -0400
+title: 'HRCI UX Overhaul'
+date: 2017-05-30 10:59:56 -0400
 categories: portfolio
-featured-image: "hrci/human-resources-certification-institute-redesign.png"
-project-tags: "UX Design, Sketch, InVision, Front-End Dev, Website Redesign"
-year: "2016-2017"
+featured-image: 'hrci/human-resources-certification-institute-redesign.png'
+project-tags: 'UX Design, Sketch, InVision, Front-End, Website Redesign'
+year: '2016-2017'
 noindex: true
 excerpt: The Human Resources Certification Institute (HRCI) needed a refresh of their website to reflect their recently simplified enrollment process. I was the lead UX designer on the project, though when we got to the development phase I became the lead front-end developer.
 ---

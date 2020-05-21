@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Open Health Networks"
-date:   2016-05-29 10:59:56 -0400
+title: 'Open Health Networks'
+date: 2016-05-29 10:59:56 -0400
 categories: portfolio
-featured-image: "ohn/open-health-networks.png"
-project-tags: "SMS, PHP, Ushahidi"
-year: "2012–2014"
+featured-image: 'ohn/open-health-networks.png'
+project-tags: 'SMS, PHP, Ushahidi, Back-End'
+year: '2012–2014'
 excerpt: Open Health Networks (OHN) is a system that allows individuals to send coded text messages which report the lack of medication, equipment and other concerns.
 ---
 
@@ -21,9 +21,9 @@ Guatemala has public health care, which means that every citizen is theoreticall
 
 We wrote a `PHP plugin` for `Ushahidi` (an open source crisis reporting platform) to translate the coded text messages into Ushahidi Reports. Some features include:
 
-* Create multiple Ushahidi reports by sending a single SMS
-* Keep track of report status (awaiting action, legal case opened, resolved)
-* Send an SMS back to the original reporter informing them of status updates
-* Fully customizable (Plugin is now also in use by the International Center for Advocates Against Discrimination)
+- Create multiple Ushahidi reports by sending a single SMS
+- Keep track of report status (awaiting action, legal case opened, resolved)
+- Send an SMS back to the original reporter informing them of status updates
+- Fully customizable (Plugin is now also in use by the International Center for Advocates Against Discrimination)
 
 {% include image-row.html image1="portfolio/ohn/ohn-map.jpg" image2="portfolio/ohn/ohn-reporting-booklets.jpg" image3="portfolio/ohn/ohn-user-testing.jpg" image4="portfolio/ohn/ohn-report.jpg" %}
