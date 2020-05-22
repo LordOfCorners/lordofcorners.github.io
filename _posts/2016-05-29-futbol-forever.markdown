@@ -19,6 +19,6 @@ Much like in Old Fútbol, two teams (Barcenova and Space Brazil) are competing t
 
 Fútbol Forever was commissioned by [Death By Audio Arcade](http://deathbyaudioarcade.com/) to be built into an arcade cabinet and added to their collection or traveling indie games. This collection has been exhibited at many galleries and events including the `Smithsonian American Art Museum` and `World Maker Faire`.
 
-I became a board member of Death By Audio Arcade and helped run a \$100,000 Kickstarter campaign to open a permanent gallery space/bar called [Wonderville](https://www.wonderville.nyc/), where Fútbol Forever has found its forever home.
+I became a board member of Death By Audio Arcade and helped run a [\$100,000 Kickstarter campaign](https://www.kickstarter.com/projects/markkleeb/wonderville-arcade) to open a permanent gallery space/bar called [Wonderville](https://www.wonderville.nyc/), where Fútbol Forever has found its forever home.
 
 {% include image-row.html image1="portfolio/ff/futbol-forever-screenshot.png" image2="portfolio/ff/futbol-forever-cabinet.jpg" image3="portfolio/ff/futbol-forever-magfest.jpg" image4="portfolio/ff/space-brazil-wins.png" %}
