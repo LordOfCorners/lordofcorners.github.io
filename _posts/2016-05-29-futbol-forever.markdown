@@ -15,8 +15,10 @@ _Long after the purge of Earth, humanity holds the pieces of its destroyed cultu
 
 _They have Fútbol._
 
-Much like in Old Fútbol, two teams (Barcenova and Space Brazil) are competing to get the ball into the goal. However, humanity abandoned terrestrial life generations ago. Small planetoids and a sun lie in the field of play, making it necessary to adapt to the changing forces. The result is a slidey, desperate, inertia-guided shoutfest masquerading as a minimalist sports game. Fútbol Forever is currently a `4 player local multiplayer` game that was designed to be played in a public space, such as a bar. My co-designer/developer [Anthony Marefat](http://www.whomakesgames.me/) and I submitted this game for our Parsons Design & Technology MFA thesis. It began as an `openFrameworks` experiment, but we ported it to `Unity` as the game's potential became apparent.
+Much like in Old Fútbol, two teams (Barcenova and Space Brazil) are competing to get the ball into the goal. However, humanity abandoned terrestrial life generations ago. Small planetoids and a sun lie in the field of play, making it necessary to adapt to the changing forces. The result is a slidey, desperate, inertia-guided shoutfest masquerading as a minimalist sports game.
 
-Fútbol Forever currently exists as an `arcade cabinet` as part of the [Death By Audio Arcade](http://deathbyaudioarcade.com/), and has been exhibited at many galleries and events including the `Smithsonian American Art Museum`, `Flowers for All Occasions`, `MAGFest`, and `World Maker Faire`. It lives permanently at [Wonderville](https://www.wonderville.nyc/) on the border of Bed-Stuy and Bushwick in Brooklyn.
+Fútbol Forever was commissioned by [Death By Audio Arcade](http://deathbyaudioarcade.com/) to be built into an arcade cabinet and added to their collection or traveling indie games. This collection has been exhibited at many galleries and events including the `Smithsonian American Art Museum` and `World Maker Faire`.
+
+I became a board member of Death By Audio Arcade and helped run a \$100,000 Kickstarter campaign to open a permanent gallery space/bar called [Wonderville](https://www.wonderville.nyc/), where Fútbol Forever has found its forever home.
 
 {% include image-row.html image1="portfolio/ff/futbol-forever-screenshot.png" image2="portfolio/ff/futbol-forever-cabinet.jpg" image3="portfolio/ff/futbol-forever-magfest.jpg" image4="portfolio/ff/space-brazil-wins.png" %}
