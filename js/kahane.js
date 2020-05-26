@@ -13,7 +13,10 @@ nav.addEventListener(
 );
 
 document.addEventListener('keydown', function (e) {
-  if (e.key === 'Escape') body.classList.remove('open');
+  if (e.key === 'Escape') {
+    body.classList.remove('open');
+    return;
+  }
 
   var isTabPressed = e.key === 'Tab' || e.key === 'Tab';
 
