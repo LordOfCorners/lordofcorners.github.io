@@ -5,8 +5,8 @@ date: 2017-5-31 11:59:56 -0400
 categories: portfolio
 featured-image: 'ucsf/spiderman.png'
 project-tags: 'Vue, AA Accessibility'
-year: 'April 2019'
-noindex: 
+year: '2019'
+noindex: true
 excerpt: UCSF Benioff Children's hospital needed to make scheduling an appointment and referring a patient simpler faster than their planned complete redesign could be finished. I worked with designers, product owners, project managers, and QA to lead development of a `Vue` based `AA compliant` front end.
 ---
 
