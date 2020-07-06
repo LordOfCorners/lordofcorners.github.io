@@ -12,9 +12,11 @@ excerpt: UCSF Benioff Children's hospital needed to make scheduling an appointme
 
 **[Project Site](https://about.ucsfbenioffchildrens.org/)**
 
-UCSF Benioff Children's hospital needed to make scheduling an appointment and referring a patient simpler faster than their planned complete redesign could be finished. I worked with designers, product owners, project managers, and QA to lead the development of a `Vue` based `AA compliant` front end. I set up our development environment using `Vue CLI`, `Prettier`, `ESLint`, `stylelint`, `Sass`, and `pre-commit hooks`.
+UCSF Benioff Children's hospital needed to make scheduling an appointment and referring a patient simpler faster than their planned complete redesign could be finished. I worked with designers, product owners, project managers, and QA to lead the development of a `Vue` based `AA compliant` front end. I set up our development environment using `Vue CLI`, `Prettier`, `ESLint`, `stylelint`, `Sass`, and `pre-commit hooks`, following the Vue.js Style Guide.
 
-Accessibility was a big requirement, and we worked with QA and design to ensure that the site passed all of the necessary requirements. For example, the designs called for a video in the hero section. We worked with our designers to add a keyboard accessible play/pause button as this is required for background videos that play automatically and last over 5 seconds. For a background video further down the page, we worked with design to get the video under 5 seconds. We also worked with design to pass contrast requirements and we made the site entirely navigable by keyboard. 
+Accessibility was a big requirement, and we worked with QA and design to ensure that the site passed all of the necessary requirements. For example, the designs called for a video in the hero section. We worked with our designers to add a keyboard accessible play/pause button as this is required for background videos that play automatically and last over 5 seconds. For a background video further down the page, we worked with design to get the video under 5 seconds. We also worked with design to pass contrast requirements and we made the site entirely navigable by keyboard.
+
+After receiving the final product, the client selected Huge to complete their full redesign.
 
 {% include image-row.html image2="portfolio/ucsf/hero.jpg" image3="portfolio/ucsf/dancer.jpg" %}
 
