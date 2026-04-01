@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>In Adam's Footsteps — A Heritage Journey Through Poland</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #f5f0e8;
+    --parchment: #ede4d0;
+    --ink: #1a1410;
+    --brown: #5c3d2e;
+    --rust: #8b3a2a;
+    --gold: #c9a84c;
+    --muted: #7a6a58;
+    --light-muted: #b5a99a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.75;
+  }
+
+  /* HEADER */
+  .header {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 80px 60px 70px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: 
+      repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 40px,
+        rgba(255,255,255,0.012) 40px,
+        rgba(255,255,255,0.012) 41px
+      );
+  }
+
+  .header-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .header-label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.35em;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 28px;
+  }
+
+  .header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+
+  .header h1 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .header-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 22px;
+    color: var(--light-muted);
+    margin-bottom: 40px;
+    font-weight: 300;
+  }
+
+  .header-divider {
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin-bottom: 30px;
+  }
+
+  .header-intro {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #c8bfb0;
+    max-width: 640px;
+    font-family: 'EB Garamond', serif;
+  }
+
+  .header-meta {
+    margin-top: 40px;
+    display: flex;
+    gap: 48px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+
+  .header-meta span strong {
+    display: block;
+    color: var(--gold);
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-bottom: 2px;
+  }
+
+  /* MAIN */
+  .main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 60px 100px;
+  }
+
+  /* SUMMARY TABLE */
+  .summary {
+    background: var(--parchment);
+    border-left: 3px solid var(--gold);
+    padding: 36px 44px;
+    margin: 60px 0;
+  }
+
+  .summary h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 24px;
+  }
+
+  .summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+  }
+
+  .summary-item {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(92, 61, 46, 0.15);
+  }
+
+  .summary-item:last-child, .summary-item:nth-last-child(2), .summary-item:nth-last-child(3) {
+    border-bottom: none;
+  }
+
+  .summary-city {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--brown);
+  }
+
+  .summary-nights {
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+
+  /* SECTION HEADERS */
+  .city-section {
+    margin-top: 72px;
+  }
+
+  .city-header {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    margin-bottom: 6px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(92, 61, 46, 0.2);
+  }
+
+  .city-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--light-muted);
+    line-height: 1;
+  }
+
+  .city-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px;
+    font-weight: 500;
+    color: var(--brown);
+    line-height: 1;
+  }
+
+  .city-dates {
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-left: auto;
+  }
+
+  .city-adam-dates {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--rust);
+    margin-bottom: 28px;
+    margin-top: 10px;
+  }
+
+  /* DAY BLOCKS */
+  .day-block {
+    margin-top: 36px;
+    padding-left: 24px;
+    border-left: 2px solid var(--parchment);
+  }
+
+  .day-label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+
+  .day-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 14px;
+  }
+
+  .day-body {
+    font-size: 16.5px;
+    line-height: 1.8;
+    color: #2e2520;
+  }
+
+  /* MEMOIR PULL QUOTE */
+  .memoir-quote {
+    background: var(--parchment);
+    border-left: 3px solid var(--rust);
+    padding: 22px 28px;
+    margin: 22px 0;
+    position: relative;
+  }
+
+  .memoir-quote-label {
+    font-family: 'Raleway', sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: var(--rust);
+    margin-bottom: 10px;
+  }
+
+  .memoir-quote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.65;
+    color: var(--brown);
+  }
+
+  .memoir-quote cite {
+    display: block;
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-style: normal;
+  }
+
+  /* WHAT TO FIND */
+  .find-list {
+    margin: 16px 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .find-list li {
+    padding: 7px 0 7px 20px;
+    position: relative;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(92,61,46,0.08);
+    color: #2e2520;
+  }
+
+  .find-list li:last-child { border-bottom: none; }
+
+  .find-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-family: 'Raleway', sans-serif;
+  }
+
+  /* BOOKING NOTE */
+  .booking-note {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 12px 20px;
+    margin-top: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+
+  .booking-note strong {
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  /* CLOSING */
+  .closing {
+    margin-top: 80px;
+    padding-top: 48px;
+    border-top: 1px solid rgba(92,61,46,0.2);
+  }
+
+  .closing h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--brown);
+    margin-bottom: 20px;
+  }
+
+  .closing p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #3a2e26;
+    max-width: 680px;
+  }
+
+  .closing p + p { margin-top: 16px; }
+
+  .closing-quote {
+    margin-top: 44px;
+    padding: 32px 40px;
+    background: var(--ink);
+    color: var(--cream);
+    position: relative;
+  }
+
+  .closing-quote p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.6;
+    color: var(--cream);
+    max-width: 100%;
+  }
+
+  .closing-quote cite {
+    display: block;
+    margin-top: 16px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-style: normal;
+  }
+
+  /* DIVIDER */
+  .section-rule {
+    width: 40px;
+    height: 2px;
+    background: var(--gold);
+    margin: 20px 0;
+  }
+
+  @media print {
+    .header { padding: 48px 40px; }
+    .main { padding: 0 40px 80px; }
+    .city-section { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <div class="header-label">A Family Heritage Journey · Poland · 15 Days</div>
+    <h1>In <em>Adam's</em> Footsteps</h1>
+    <div class="header-subtitle">A trip shaped by the memoir of Adam Kahane — born Jasło, 1922</div>
+    <div class="header-divider"></div>
+    <p class="header-intro">
+      This itinerary was built around <em>My Journey: Memoirs of a Lucky Man</em>, Adam Kahane's account of his life in prewar Poland, deportation to Soviet labor camps, and postwar return. Every stop on this trip corresponds to a specific place, person, or memory from his words. We have tried to go where he went, stand where he stood, and see what he saw.
+    </p>
+    <div class="header-meta">
+      <span><strong>14 nights</strong>Duration</span>
+      <span><strong>Fly Warsaw → Kraków</strong>Routing</span>
+      <span><strong>Warsaw · Łódź · Kraków · Jasło · Zakopane</strong>Cities</span>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+
+  <div class="summary">
+    <h2>At a Glance</h2>
+    <div class="summary-grid">
+      <div class="summary-item">
+        <div class="summary-city">Warsaw</div>
+        <div class="summary-nights">3 nights · Days 1–3</div>
+      </div>
+      <div class="summary-item">
+        <div class="summary-city">Łódź</div>
+        <div class="summary-nights">1 night · Day 4</div>
+      </div>
+      <div class="summary-item">
+        <div class="summary-city">Kraków</div>
+        <div class="summary-nights">4 nights · Days 5–8</div>
+      </div>
+      <div class="summary-item">
+        <div class="summary-city">Jasło</div>
+        <div class="summary-nights">1 night · Days 9–10</div>
+      </div>
+      <div class="summary-item">
+        <div class="summary-city">Zakopane</div>
+        <div class="summary-nights">3 nights · Days 11–13</div>
+      </div>
+      <div class="summary-item">
+        <div class="summary-city">Kraków</div>
+        <div class="summary-nights">1 night · Day 14 · Fly Day 15</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WARSAW -->
+  <div class="city-section">
+    <div class="city-header">
+      <span class="city-number">I.</span>
+      <span class="city-name">Warsaw</span>
+      <span class="city-dates">Days 1–3 · 3 Nights</span>
+    </div>
+    <div class="city-adam-dates">Adam's connection: His uncle Michał practiced law in Łódź and Warsaw. Adam passed through Warsaw on his return to Poland from the Soviet Union in January 1947, glimpsing the destroyed city from a train that stopped a mile short of the ruined station.</div>
+
+    <div class="day-block">
+      <div class="day-label">Day 1</div>
+      <div class="day-title">Arrive & Walk the Old Town</div>
+      <div class="day-body">
+        <p>Arrive, check in, and walk the Old Town and Royal Castle. Warsaw was 85% destroyed by the Nazis — deliberately, building by building — and rebuilt from photographs and paintings. Adam described arriving back in Poland in 1947 and seeing the devastation from the train. The city you walk through today is an act of collective memory and defiance.</p>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">Day 2</div>
+      <div class="day-title">POLIN Museum + Warsaw Uprising Museum</div>
+      <div class="day-body">
+        <p>The POLIN Museum of the History of Polish Jews is one of the finest museums in Europe — a 1,000-year story told with extraordinary care. Spend the morning here (free on Thursdays). This is essential preparation for everything that follows: Adam's family, their world, their annihilation, and the handful of survivors.</p>
+
+        <div class="memoir-quote">
+          <div class="memoir-quote-label">From the memoir</div>
+          <p>"Of all the children shown in this picture, I am the only one left. Most did not survive the war."</p>
+          <cite>— Adam Kahane, captioning a family photograph from Jasło</cite>
+        </div>
+
+        <p>In the afternoon, the Warsaw Uprising Museum tells the story of the 1944 uprising — what was happening in Poland while Adam and his family were surviving in Soviet labor camps and collective farms in Kazakhstan.</p>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">Day 3</div>
+      <div class="day-title">Free Day in Warsaw</div>
+      <div class="day-body">
+        <p>A free day to wander at your own pace — the Praga neighbourhood across the Vistula, food markets, restaurants. This is also a good evening to sit with the memoir and read ahead to the Jasło chapters before the most personal part of the journey begins.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ŁÓDŹ -->
+  <div class="city-section">
+    <div class="city-header">
+      <span class="city-number">II.</span>
+      <span class="city-name">Łódź</span>
+      <span class="city-dates">Day 4 · 1 Night</span>
+    </div>
+    <div class="city-adam-dates">Adam's connection: He was born here (his mother had traveled from Łódź to Jasło for the birth, then returned). His father Jacob ran a profitable pharmacy and lab here. Adam lived here January–August 1947, running his father's pharmacy after the war. His father died on the train to Auschwitz from Łódź at age 54.</div>
+
+    <div class="day-block">
+      <div class="day-label">Day 4</div>
+      <div class="day-title">The Jewish Cemetery + Manufaktura</div>
+      <div class="day-body">
+        <p>Train from Warsaw (~1.5 hours). The Łódź Jewish Cemetery is one of the largest in the world — over 180,000 graves. Adam's father Jacob operated his pharmacy in the Łódź ghetto almost until its final liquidation. After the war, Adam returned here and inherited the pharmacy from his uncle Iziu.</p>
+
+        <div class="memoir-quote">
+          <div class="memoir-quote-label">From the memoir</div>
+          <p>"My father stayed in Łódź during the occupation. Luckily his pharmacy was in the area designated as ghetto and he operated it almost to the time of the final liquidation of the ghetto. I was told by an Auschwitz survivor that he died of a heart attack on the train to the death camp. He was only 54."</p>
+          <cite>— Adam Kahane, Memoirs of a Lucky Man</cite>
+        </div>
+
+        <div class="memoir-quote">
+          <div class="memoir-quote-label">From the memoir</div>
+          <p>"As I entered the pharmacy, I saw Uncle Iziu. He kissed me and said, 'This place is yours. I will help you run it for a while.'"</p>
+          <cite>— Adam Kahane, on returning to Łódź in January 1947</cite>
+        </div>
+
+        <p>In the evening, Manufaktura — a vast 19th-century textile mill (the kind that made Łódź famous) turned into the city's cultural heart. Good for dinner and a drink.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- KRAKÓW -->
+  <div class="city-section">
+    <div class="city-header">
+      <span class="city-number">III.</span>
+      <span class="city-name">Kraków</span>
+      <span class="city-dates">Days 5–8 · 4 Nights</span>
+    </div>
+    <div class="city-adam-dates">Adam's connection: He lived at Świętego Sebastiana 5 — in the heart of Kazimierz, the historic Jewish quarter — from August 1947 until he left for Paris in September 1948. The Wistreich family (Reggie, Eva, Hugo, Aunt Hanka, Uncle Staszek) also lived in Kraków after returning from Kazakhstan. He visited again in 1976.</div>
+
+    <div class="day-block">
+      <div class="day-label">Day 5</div>
+      <div class="day-title">Arrive Kraków · First Evening in Kazimierz</div>
+      <div class="day-body">
+        <p>Train from Łódź (~2.5 hours). Check in and walk to Kazimierz, the historic Jewish quarter. Adam's apartment at Świętego Sebastiana 5 is steps from Plac Wolnica, the neighbourhood's main square. Spend the evening wandering — synagogues, Jewish bookshops, restaurants, and bars fill this neighbourhood. Find his street. Stand outside number 5.</p>
+
+        <div class="memoir-quote">
+          <div class="memoir-quote-label">From the memoir</div>
+          <p>"We concluded that there is no future for us in communist Poland and decided to emigrate. The pharmacy was very profitable but I got only $2000 when I sold it... We left Poland in September 1947 after a year's stay."</p>
+          <cite>— Adam Kahane, on leaving Kraków for Paris</cite>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">Day 6</div>
+      <div class="day-title">Wawel Castle + Schindler's Factory</div>
+      <div class="day-body">
+        <p>Wawel Royal Castle in the morning — the historic seat of Polish kings, dramatically positioned above the Vistula. <span class="booking-note"><strong>Book timed tickets online</strong> in advance</span></p>
+        <p style="margin-top:14px;">Schindler's Enamel Factory in the afternoon — now a superb WWII museum telling the story of Kraków's Jews under Nazi occupation. The occupation of Kraków is the backdrop to the years when Adam's family in Jasło were being shot, deported, and murdered. <span class="booking-note"><strong>Book tickets online</strong> — sells out</span></p>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">Day 7</div>
+      <div class="day-title">Auschwitz-Birkenau — A Family Visit</div>
+      <div class="day-body">
+        <p>This is not simply a historical visit. Adam's family members were murdered here.</p>
+
+        <div class="memoir-quote">
+          <div class="memoir-quote-label">From the memoir — Uncle Mundek</div>
+          <p>"After his retirement they lived in Vienna. When Austria was annexed they moved to Holland — he was a Dutch citizen — and from there they were eventually taken to Auschwitz."</p>
+          <cite>— Adam Kahane, on his Uncle Mundek Menasse, who built railroads in Sumatra</cite>
+        </div>
+
+        <div class="memoir-quote">
+          <div class="memoir-quote-label">From the memoir — Adam's father Jacob</div>
+          <p>"I was told by an Auschwitz survivor that he died of a heart attack on the train to the death camp. He was only 54."</p>
+          <cite>— Adam Kahane</cite>
+        </div>
+
+        <p>Train from Kraków to Oświęcim (~1.5 hours). Plan a full day. Go easy on yourself afterward — the evening back in Kazimierz will feel different after this. <span class="booking-note"><strong>Book guided tour weeks in advance</strong> at auschwitz.org — essential</span></p>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">Day 8</div>
+      <div class="day-title">Free Day in Kraków</div>
+      <div class="day-body">
+        <p>A genuinely free day — especially welcome after Auschwitz. Wander the Main Market Square (Rynek Główny), sit in a café in Kazimierz, explore side streets, eat well. Kraków's nightlife is among the best in Central Europe. Rest, reflect, and let the city do its work.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JASŁO -->
+  <div class="city-section">
+    <div class="city-header">
+      <span class="city-number">IV.</span>
+      <span class="city-name">Jasło</span>
+      <span class="city-dates">Days 9–10 · 1 Night</span>
+    </div>
+    <div class="city-adam-dates">Adam's connection: Everything. He lived here from age 5 to 17 — his grandfather's house on the Rynek, his school, his river, his first kiss, his whole childhood world. He was born nearby in Jareniówka on the bank of the Wisłoka River. This is the heart of the journey.</div>
+
+    <div class="day-block">
+      <div class="day-label">Day 9</div>
+      <div class="day-title">Arrive Jasło · The Rynek · The River · The School</div>
+      <div class="day-body">
+        <p>Train from Kraków (~2 hours). Arrive mid-morning. Bring a printed copy of the memoir. This is the day to read it on location.</p>
+
+        <div class="section-rule"></div>
+
+        <p><strong>The Rynek — His Grandfather's House</strong></p>
+        <p>The memoir includes a photograph of the Rynek with a caption identifying the house: <em>"my grandfather's house (light red roof) where I lived between the ages of five and 17."</em> The business — "Józef Menasse and Son-in-Law," a quality textile shop — operated from this address. Stand on the Rynek and find it.</p>
+
+        <div class="memoir-quote">
+          <div class="memoir-quote-label">From the memoir</div>
+          <p>"My parents' divorce was a blessing for me because I exchanged the life of an only child in a dysfunctional family in a large industrial city for a life in a large close-knit family in a pretty, small town full of aunts, uncles, and cousins."</p>
+          <cite>— Adam Kahane, on moving to Jasło aged 5</cite>
+        </div>
+
+        <div class="section-rule"></div>
+
+        <p><strong>The Jasiołka River</strong></p>
+        <p>Walk from the Rynek down to the Jasiołka. Adam and Reggie biked here every summer day. They picked up their kayak at Mr. Kramer's warehouse near the bridge and paddled to the beach. They made fires and baked potatoes in the ashes. On the far bank was a meadow and a small grove — a place Adam thought about for the rest of his life when he wanted to feel at peace.</p>
+
+        <div class="memoir-quote">
+          <div class="memoir-quote-label">From the memoir</div>
+          <p>"On the other bank of the river were a meadow and a small grove. It was so pretty and peaceful there. Many years later, when I wanted to think about something relaxing, I thought about this place."</p>
+          <cite>— Adam Kahane</cite>
+        </div>
+
+        <div class="section-rule"></div>
+
+        <p><strong>The Boys' High School</strong></p>
+        <p>The memoir includes a photograph of the school — rebuilt after the war but on the same site. Adam was elected deputy head of class here, the only Jewish boy to hold that position. He and Reggie organized a student strike against an unpopular teacher of military preparedness and were expelled just before the war began — making their expulsion moot when Germany invaded in September 1939 and school never resumed.</p>
+        <p>Aunt Manka's house was directly across the street from the school — where Adam and Reggie would play bridge when excused from Catholic religion class.</p>
+
+        <div class="memoir-quote">
+          <div class="memoir-quote-label">From the memoir</div>
+          <p>"Actually this became immaterial because in September, war broke out and we never went back to that school."</p>
+          <cite>— Adam Kahane, on their expulsion and the outbreak of war</cite>
+        </div>
+
+        <div class="section-rule"></div>
+
+        <p><strong>Monastery Hill — His First Kiss</strong></p>
+        <p>Adam's account of his first kiss is one of the memoir's most charming passages. His cousin Renatka's friend Hala suggested a walk to Monastery Hill, where they found a bench under chestnut trees.</p>
+
+        <div class="memoir-quote">
+          <div class="memoir-quote-label">From the memoir</div>
+          <p>"After a minute of silence, Hala said, 'Adasiu, you can kiss me, if you want.' I complied without hesitation, but somewhat awkwardly."</p>
+          <cite>— Adam Kahane</cite>
+        </div>
+
+        <div class="section-rule"></div>
+
+        <p><strong>The Weight of What Happened Here</strong></p>
+        <p>The family that filled Jasło with life was almost entirely annihilated. As you walk the town, carry these names:</p>
+
+        <ul class="find-list">
+          <li><strong>Uncle Dulek</strong> — a lawyer in Jasło. As he was marched to the train for Treblinka, he waved to his teacher Mr. Grudniewicz and called out in Latin: <em>Ave Caesar, morituri te salutant</em> — "Hail Caesar, we who are about to die salute you."</li>
+          <li><strong>Aunt Manka</strong> — a military doctor decorated by the German Army in WWI. She believed her German citation would protect her. She was arrested by the Gestapo and shot. As she was led to her execution, she cursed her executioners and told them they would pay for it.</li>
+          <li><strong>Cousins Renatka (21) and Jasia (18)</strong> — Manka's daughters, Adam's close companions. They were taken by car to a small town outside Jasło, ordered to push the car, and shot from behind. Jasia lived two more hours. Adam translated the account of their deaths for the Holocaust Museum.</li>
+        </ul>
+
+        <div class="memoir-quote">
+          <div class="memoir-quote-label">From the memoir</div>
+          <p>"This is a horrible story, which hit me very hard because we were very close with Renatka and Jasia."</p>
+          <cite>— Adam Kahane</cite>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">Day 10</div>
+      <div class="day-title">Slow Morning in Jasło · Afternoon Train to Kraków</div>
+      <div class="day-body">
+        <p>A slow morning. Return to any place from yesterday that needs more time. Sit on the Rynek with a coffee. Let it settle. Take the midday train back to Kraków for one final night before heading to the mountains.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ZAKOPANE -->
+  <div class="city-section">
+    <div class="city-header">
+      <span class="city-number">V.</span>
+      <span class="city-name">Zakopane</span>
+      <span class="city-dates">Days 11–13 · 3 Nights</span>
+    </div>
+    <div class="city-adam-dates">Adam's connection: Adam and Reggie skied regularly as boys — it was central to their upbringing in Jasło, with Aunt Hanka leading the children on skis to nearby valleys in winter. In 1935, Adam attended a sightseeing camp in the mountains with 40 boys from across Poland — the first time many of those boys had ever spoken to a Jewish person. He went on to run a successful ski shop in Washington D.C. for over 50 years. Skiing was threaded through his entire life.</div>
+
+    <div class="day-block">
+      <div class="day-label">Day 11</div>
+      <div class="day-title">Bus to Zakopane · Krupówki</div>
+      <div class="day-body">
+        <p>2-hour bus from Kraków. Arrive and walk Krupówki, Zakopane's lively pedestrian street — stalls selling oscypek (smoked sheep's cheese), mountain food, and local crafts. The Tatra mountains frame the town on every side. Adam and Reggie grew up skiing in these mountains. His beloved ski shop in Washington D.C. was an echo of this world.</p>
+
+        <div class="memoir-quote">
+          <div class="memoir-quote-label">From the memoir</div>
+          <p>"In 1935 we took part in a sightseeing camp in the mountains. About 40 boys from all over Poland took part in the camp. We were the only Jewish boys... We hiked in high mountains and took a boat trip through a picturesque gorge. I will never forget how good the food tasted."</p>
+          <cite>— Adam Kahane, on his mountain camp as a teenager</cite>
+        </div>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">Day 12</div>
+      <div class="day-title">Morskie Oko Hike</div>
+      <div class="day-body">
+        <p>The crown jewel of the Tatras — a glacial lake at 1,395 metres, surrounded by peaks. Bus from Zakopane to the trailhead, then a 2-hour walk each way on a well-maintained path. Horse carriages are available for part of the route if needed. The scenery is extraordinary.</p>
+      </div>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">Day 13</div>
+      <div class="day-title">Free Day in the Mountains</div>
+      <div class="day-body">
+        <p>A second hike, a cable car up Kasprowy Wierch, or simply wandering and eating well. After the intensity of the preceding days, these mountains — where Adam played as a boy — are a good place to breathe.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- KRAKÓW FINAL -->
+  <div class="city-section">
+    <div class="city-header">
+      <span class="city-number">VI.</span>
+      <span class="city-name">Kraków — Farewell</span>
+      <span class="city-dates">Day 14 · 1 Night · Fly Day 15</span>
+    </div>
+
+    <div class="day-block">
+      <div class="day-label">Days 14–15</div>
+      <div class="day-title">Return · One Last Evening · Fly Home</div>
+      <div class="day-body">
+        <p>Bus back from Zakopane. One final evening in Kazimierz — the neighbourhood where Adam spent his last year in Poland before boarding the train to Paris in the autumn of 1947. Dinner, a drink, and time to reflect. Fly home from Kraków airport on day 15.</p>
+
+        <div class="memoir-quote">
+          <div class="memoir-quote-label">From the memoir — on leaving Poland forever</div>
+          <p>"Finally, in the fall of 1947, we boarded the train to Paris with hopes and anxiety — to start a new chapter of our lives."</p>
+          <cite>— Adam Kahane</cite>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLOSING -->
+  <div class="closing">
+    <h2>A Note on the Memoir</h2>
+    <p>Every stop on this itinerary was shaped by <em>My Journey: Memoirs of a Lucky Man</em> by Adam Kahane. The memoir describes his childhood on the Jasło Rynek, his summers on the Jasiołka river, his school, his family, his deportation, his years in Soviet labor camps and Kazakhstan, his postwar life in Łódź and Kraków, and his emigration to New York via Paris in 1948.</p>
+    <p>We built this trip to walk where he walked and see what remains. Some things are gone. Some, remarkably, are still there — including the house on the Rynek with the light red roof, the river, and the mountains he loved.</p>
+    <p>Bring the memoir. Read it on location. That is the point.</p>
+
+    <div class="closing-quote">
+      <p>"Be optimistic. Eventually everything works out. Optimists live longer and enjoy life more. Hope you all will have as lucky and happy a life as I did."</p>
+      <cite>— Adam Kahane, final words of his memoir, written at age 92</cite>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
