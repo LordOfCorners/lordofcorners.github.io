@@ -40,7 +40,7 @@
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: 
+    background:
       repeating-linear-gradient(
         45deg,
         transparent,
@@ -53,6 +53,7 @@
   .header-inner {
     max-width: 860px;
     margin: 0 auto;
+    padding: 0 60px;
     position: relative;
     z-index: 1;
   }
@@ -125,6 +126,29 @@
     letter-spacing: 0;
     text-transform: none;
     margin-bottom: 2px;
+  }
+
+  /* LINKS */
+  .header-intro a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: rgba(201,168,76,0.5);
+    text-underline-offset: 3px;
+  }
+
+  .header-intro a:hover {
+    text-decoration-color: var(--gold);
+  }
+
+  .main a {
+    color: var(--brown);
+    text-decoration: underline;
+    text-decoration-color: rgba(92,61,46,0.35);
+    text-underline-offset: 3px;
+  }
+
+  .main a:hover {
+    text-decoration-color: var(--brown);
   }
 
   /* MAIN */
@@ -339,7 +363,17 @@
     font-weight: 300;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
+    width: fit-content;
+  }
+
+  a.booking-note {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a.booking-note:hover {
+    opacity: 0.8;
   }
 
   .booking-note strong {
@@ -401,6 +435,96 @@
     font-style: normal;
   }
 
+  /* PHOTOS */
+  .photo {
+    margin: 28px 0;
+  }
+
+  .photo img {
+    width: 100%;
+    display: block;
+  }
+
+  .photo-caption {
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+
+  .photo-caption em {
+    font-style: italic;
+    color: var(--brown);
+  }
+
+  .photo-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 28px 0;
+  }
+
+  .photo-pair .photo {
+    margin: 0;
+  }
+
+  .photo-portrait {
+    max-width: 320px;
+  }
+
+  .photo-portrait-small {
+    max-width: 240px;
+  }
+
+  .photo-document {
+    max-width: 560px;
+  }
+
+  .photo-full {
+    max-width: 100%;
+  }
+
+  .header-title-row {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+
+  .header-portrait {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 50%;
+    border: 2px solid rgba(201,168,76,0.4);
+  }
+
+  .photo-closing-inline {
+    width: 180px;
+    float: left;
+    margin: 6px 28px 12px 0;
+    display: block;
+  }
+
+  @media (max-width: 640px) {
+    .photo-pair {
+      grid-template-columns: 1fr;
+    }
+    .header-portrait {
+      width: 72px;
+      height: 72px;
+      min-width: 72px;
+    }
+    .header-title-row {
+      gap: 20px;
+    }
+  }
+
   /* DIVIDER */
   .section-rule {
     width: 40px;
@@ -425,7 +549,7 @@
     <div class="header-subtitle">A trip shaped by the memoir of Adam Kahane — born Jasło, 1922</div>
     <div class="header-divider"></div>
     <p class="header-intro">
-      This itinerary was built around <em>My Journey: Memoirs of a Lucky Man</em>, Adam Kahane's account of his life in prewar Poland, deportation to Soviet labor camps, and postwar return. Every stop on this trip corresponds to a specific place, person, or memory from his words. We have tried to go where he went, stand where he stood, and see what he saw.
+      This itinerary was built around <a href="images/memoir.pdf" target="_blank"><em>My Journey: Memoirs of a Lucky Man</em></a>, Adam Kahane's account of his life in prewar Poland, deportation to Soviet labor camps, and postwar return. Every stop on this trip corresponds to a specific place, person, or memory from his words. We have tried to go where he went, stand where he stood, and see what he saw.
     </p>
     <div class="header-meta">
       <span><strong>14 nights</strong>Duration</span>
@@ -568,8 +692,8 @@
       <div class="day-label">Day 6</div>
       <div class="day-title">Wawel Castle + Schindler's Factory</div>
       <div class="day-body">
-        <p>Wawel Royal Castle in the morning — the historic seat of Polish kings, dramatically positioned above the Vistula. <span class="booking-note"><strong>Book timed tickets online</strong> in advance</span></p>
-        <p style="margin-top:14px;">Schindler's Enamel Factory in the afternoon — now a superb WWII museum telling the story of Kraków's Jews under Nazi occupation. The occupation of Kraków is the backdrop to the years when Adam's family in Jasło were being shot, deported, and murdered. <span class="booking-note"><strong>Book tickets online</strong> — sells out</span></p>
+        <p>Wawel Royal Castle in the morning — the historic seat of Polish kings, dramatically positioned above the Vistula. <a href="https://bilety.wawel.krakow.pl/" target="_blank" class="booking-note"><strong>Book timed tickets online</strong> in advance</a></p>
+        <p style="margin-top:14px;">Schindler's Enamel Factory in the afternoon — now a superb WWII museum telling the story of Kraków's Jews under Nazi occupation. The occupation of Kraków is the backdrop to the years when Adam's family in Jasło were being shot, deported, and murdered. <a href="https://muzeumkrakowa.pl/en/branches/oskar-schindlers-enamel-factory" target="_blank" class="booking-note"><strong>Book tickets online</strong> — sells out</a></p>
       </div>
     </div>
 
@@ -591,7 +715,7 @@
           <cite>— Adam Kahane</cite>
         </div>
 
-        <p>Train from Kraków to Oświęcim (~1.5 hours). Plan a full day. Go easy on yourself afterward — the evening back in Kazimierz will feel different after this. <span class="booking-note"><strong>Book guided tour weeks in advance</strong> at auschwitz.org — essential</span></p>
+        <p>Train from Kraków to Oświęcim (~1.5 hours). Plan a full day. Go easy on yourself afterward — the evening back in Kazimierz will feel different after this. <a href="https://www.auschwitz.org/" target="_blank" class="booking-note"><strong>Book guided tour weeks in advance</strong> at auschwitz.org — essential</a></p>
       </div>
     </div>
 
@@ -613,6 +737,11 @@
     </div>
     <div class="city-adam-dates">Adam's connection: Everything. He lived here from age 5 to 17 — his grandfather's house on the Rynek, his school, his river, his first kiss, his whole childhood world. He was born nearby in Jareniówka on the bank of the Wisłoka River. This is the heart of the journey.</div>
 
+    <div class="photo photo-full">
+      <img src="images/adam/jaslo-rynek-postcard.png" alt="Jasło Rynek, prewar postcard">
+      <div class="photo-caption">The Jasło Rynek in a prewar postcard. The Menasse family business is visible on the right.</div>
+    </div>
+
     <div class="day-block">
       <div class="day-label">Day 9</div>
       <div class="day-title">Arrive Jasło · The Rynek · The River · The School</div>
@@ -630,6 +759,11 @@
           <cite>— Adam Kahane, on moving to Jasło aged 5</cite>
         </div>
 
+        <div class="photo photo-full">
+          <img src="images/adam/adam-rebuilt-house-jaslo.png" alt="Adam and Gert standing in front of the rebuilt family house on the Jasło Rynek, circa 1976">
+          <div class="photo-caption">Adam and Gert at the rebuilt family house on the Jasło Rynek, circa 1976.</div>
+        </div>
+
         <div class="section-rule"></div>
 
         <p><strong>The Jasiołka River</strong></p>
@@ -641,11 +775,21 @@
           <cite>— Adam Kahane</cite>
         </div>
 
+        <div class="photo photo-full">
+          <img src="images/adam/kayak-jasiolka.png" alt="Young men with kayaks on a river, prewar Poland">
+          <div class="photo-caption">Adam and friends on the Jasiołka river.</div>
+        </div>
+
         <div class="section-rule"></div>
 
         <p><strong>The Boys' High School</strong></p>
-        <p>The memoir includes a photograph of the school — rebuilt after the war but on the same site. Adam was elected deputy head of class here, the only Jewish boy to hold that position. He and Reggie organized a student strike against an unpopular teacher of military preparedness and were expelled just before the war began — making their expulsion moot when Germany invaded in September 1939 and school never resumed.</p>
+        <p>Adam's school — the I Liceum Ogólnokształcące im. Króla Stanisława Leszczyńskiego — is one of the oldest in the region and still operating today. The building was rebuilt after the war on the same site. Adam was elected deputy head of class here, the only Jewish boy to hold that position. He and Reggie organized a student strike against an unpopular teacher of military preparedness and were expelled just before the war began — making their expulsion moot when Germany invaded in September 1939 and school never resumed.</p>
         <p>Aunt Manka's house was directly across the street from the school — where Adam and Reggie would play bridge when excused from Catholic religion class.</p>
+
+        <div class="photo photo-full">
+          <img src="images/adam/adam-high-school-building.png" alt="The Liceum Ogólnokształcące in Jasło, Adam's high school">
+          <div class="photo-caption">The I Liceum Ogólnokształcące im. Króla Stanisława Leszczyńskiego — still operating today.</div>
+        </div>
 
         <div class="memoir-quote">
           <div class="memoir-quote-label">From the memoir</div>
@@ -712,6 +856,11 @@
           <p>"In 1935 we took part in a sightseeing camp in the mountains. About 40 boys from all over Poland took part in the camp. We were the only Jewish boys... We hiked in high mountains and took a boat trip through a picturesque gorge. I will never forget how good the food tasted."</p>
           <cite>— Adam Kahane, on his mountain camp as a teenager</cite>
         </div>
+
+        <div class="photo photo-full">
+          <img src="images/adam/adam-skiing.png" alt="Adam and friends skiing near Jasło, 1930s">
+          <div class="photo-caption">Adam and friends skiing near Jasło, 1930s.</div>
+        </div>
       </div>
     </div>
 
@@ -758,7 +907,10 @@
   <!-- CLOSING -->
   <div class="closing">
     <h2>A Note on the Memoir</h2>
-    <p>Every stop on this itinerary was shaped by <em>My Journey: Memoirs of a Lucky Man</em> by Adam Kahane. The memoir describes his childhood on the Jasło Rynek, his summers on the Jasiołka river, his school, his family, his deportation, his years in Soviet labor camps and Kazakhstan, his postwar life in Łódź and Kraków, and his emigration to New York via Paris in 1948.</p>
+
+    <img class="photo-closing-inline" src="images/adam/adam-2012.png" alt="Adam Kahane, 2012, age 90">
+
+    <p>Every stop on this itinerary was shaped by <a href="images/memoir.pdf" target="_blank"><em>My Journey: Memoirs of a Lucky Man</em></a> by Adam Kahane. The memoir describes his childhood on the Jasło Rynek, his summers on the Jasiołka river, his school, his family, his deportation, his years in Soviet labor camps and Kazakhstan, his postwar life in Łódź and Kraków, and his emigration to New York via Paris in 1948.</p>
     <p>We built this trip to walk where he walked and see what remains. Some things are gone. Some, remarkably, are still there — including the house on the Rynek with the light red roof, the river, and the mountains he loved.</p>
     <p>Bring the memoir. Read it on location. That is the point.</p>
 
