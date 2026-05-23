@@ -416,14 +416,6 @@
 
   .closing p + p { margin-top: 16px; }
 
-  .closing-quote {
-    margin-top: 44px;
-    padding: 32px 40px;
-    background: var(--ink);
-    color: var(--cream);
-    position: relative;
-  }
-
   .closing-quote p {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
@@ -517,8 +509,23 @@
   .photo-closing-inline {
     width: 180px;
     float: left;
-    margin: 6px 28px 12px 0;
+    margin: 6px 28px 20px 0;
     display: block;
+  }
+
+  .closing-text {
+    overflow: hidden;
+  }
+
+  .closing-quote-wrap {
+    clear: both;
+    margin-top: 44px;
+  }
+
+  .closing-quote {
+    padding: 32px 40px;
+    background: var(--ink);
+    color: var(--cream);
   }
 
   @media (max-width: 640px) {
@@ -811,6 +818,17 @@
           <div class="photo-caption">Adam and Gert at the rebuilt family house on the Jasło Rynek, circa 1976. The ground floor had been converted to a state butcher's shop under communist Poland.</div>
         </div>
 
+        <div class="memoir-quote">
+          <div class="memoir-quote-label">From the memoir</div>
+          <p>"On the other bank of the river were a meadow and a small grove. It was so pretty and peaceful there. Many years later, when I wanted to think about something relaxing, I thought about this place."</p>
+          <cite>— Adam Kahane</cite>
+        </div>
+
+        <div class="photo photo-full">
+          <img src="images/adam/kayak-jasiolka.png" alt="Adam and friends kayaking on the Jasiołka river">
+          <div class="photo-caption">Adam and friends on the Jasiołka river.</div>
+        </div>
+
         <p><strong>The weight of what happened in Jasło.</strong> The family that filled this town with life was almost entirely annihilated.</p>
 
         <ul class="find-list">
@@ -926,14 +944,17 @@
   <div class="closing">
     <h2>A Note on the Memoir</h2>
 
-    <img class="photo-closing-inline" src="images/adam/adam-2012.png" alt="Adam Kahane, 2012, age 90">
+    <div class="closing-text">
+      <img class="photo-closing-inline" src="images/adam/adam-2012.png" alt="Adam Kahane, 2012, age 90">
+      <p><a href="images/adam/memoir.pdf" target="_blank"><em>My Journey: Memoirs of a Lucky Man</em></a> by Adam Kahane describes his childhood on the Jasło Rynek, his summers on the Jasiołka river, his deportation to Soviet labor camps, his postwar years in Łódź and Kraków, and his emigration to New York via Paris in 1948.</p>
+      <p>Some of the places on this trip are places he knew. Some things are gone. Some, remarkably, are still there.</p>
+    </div>
 
-    <p><a href="images/adam/memoir.pdf" target="_blank"><em>My Journey: Memoirs of a Lucky Man</em></a> by Adam Kahane describes his childhood on the Jasło Rynek, his summers on the Jasiołka river, his deportation to Soviet labor camps, his postwar years in Łódź and Kraków, and his emigration to New York via Paris in 1948.</p>
-    <p>Some of the places on this trip are places he knew. Some things are gone. Some, remarkably, are still there.</p>
-
-    <div class="closing-quote">
-      <p>"Be optimistic. Eventually everything works out. Optimists live longer and enjoy life more. Hope you all will have as lucky and happy a life as I did."</p>
-      <cite>— Adam Kahane, final words of his memoir, written at age 92</cite>
+    <div class="closing-quote-wrap">
+      <div class="closing-quote">
+        <p>"Be optimistic. Eventually everything works out. Optimists live longer and enjoy life more. Hope you all will have as lucky and happy a life as I did."</p>
+        <cite>— Adam Kahane, final words of his memoir, written at age 92</cite>
+      </div>
     </div>
   </div>
 
