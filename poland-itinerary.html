@@ -684,12 +684,15 @@
   .food-item:last-child { border-bottom: none; }
 
   .food-item label {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
+    display: block;
     cursor: pointer;
     user-select: none;
-    width: 100%;
+  }
+
+  .food-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .food-checkbox {
@@ -699,7 +702,6 @@
     height: 13px;
     border: 1px solid rgba(92,61,46,0.35);
     flex-shrink: 0;
-    margin-top: 2px;
     cursor: pointer;
     position: relative;
     transition: background 0.15s, border-color 0.15s;
@@ -723,14 +725,12 @@
     transform: rotate(45deg);
   }
 
-  .food-text { flex: 1; }
-
   .food-name {
     font-family: 'Raleway', sans-serif;
     font-size: 13px;
     font-weight: 500;
     color: var(--brown);
-    display: block;
+    flex: 1;
     transition: color 0.15s;
   }
 
@@ -739,8 +739,8 @@
     font-size: 11px;
     font-weight: 300;
     color: var(--light-muted);
-    display: block;
-    margin-top: 2px;
+    padding-left: 23px;
+    margin-top: 3px;
   }
 
   .food-item:has(.food-checkbox:checked) .food-name {
@@ -1352,80 +1352,80 @@
     <div class="food-section">
       <h2>Soups</h2>
       <ul class="food-list">
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="zurek"><span class="food-text"><span class="food-name">Żurek</span><span class="food-desc">sour rye soup with hard-boiled egg and white sausage — Poland's most distinctive soup</span></span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="barszcz"><span class="food-text"><span class="food-name">Barszcz czerwony</span><span class="food-desc">clear beet broth, often served with tiny mushroom dumplings (uszka)</span></span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="rosol"><span class="food-text"><span class="food-name">Rosół</span><span class="food-desc">clear golden chicken broth — Poland's Sunday staple</span></span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="kwasnica"><span class="food-text"><span class="food-name">Kwaśnica</span><span class="food-desc">sour cabbage soup with smoked meat — the mountain version of Poland's most warming soup</span></span><span class="food-tag">Zakopane</span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="zupa-ogorkowa"><span class="food-text"><span class="food-name">Zupa ogórkowa</span><span class="food-desc">sour pickle soup with potato and dill — tangy, warming, and very Polish</span></span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="bialy-barszcz"><span class="food-text"><span class="food-name">Biały barszcz</span><span class="food-desc">white borscht — sour rye base like żurek but milder, served with egg and sausage</span></span></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="zurek"><span class="food-name">Żurek</span></div><div class="food-desc">sour rye soup with hard-boiled egg and white sausage — Poland's most distinctive soup</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="barszcz"><span class="food-name">Barszcz czerwony</span></div><div class="food-desc">clear beet broth, often served with tiny mushroom dumplings (uszka)</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="rosol"><span class="food-name">Rosół</span></div><div class="food-desc">clear golden chicken broth — Poland's Sunday staple</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kwasnica"><span class="food-name">Kwaśnica</span><span class="food-tag">Zakopane</span></div><div class="food-desc">sour cabbage soup with smoked meat — the mountain version of Poland's most warming soup</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="zupa-ogorkowa"><span class="food-name">Zupa ogórkowa</span></div><div class="food-desc">sour pickle soup with potato and dill — tangy, warming, and very Polish</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="bialy-barszcz"><span class="food-name">Biały barszcz</span></div><div class="food-desc">white borscht — sour rye base like żurek but milder, served with egg and sausage</div></label></li>
       </ul>
     </div>
 
     <div class="food-section">
       <h2>Dumplings</h2>
       <ul class="food-list">
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="pierogi-ruskie"><span class="food-text"><span class="food-name">Pierogi ruskie</span><span class="food-desc">potato and farmer's cheese — the classic, non-negotiable</span></span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="pierogi-mieso"><span class="food-text"><span class="food-name">Pierogi z mięsem</span><span class="food-desc">meat-filled dumplings, usually pan-fried with onion</span></span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="pierogi-kapusta"><span class="food-text"><span class="food-name">Pierogi z kapustą i grzybami</span><span class="food-desc">sauerkraut and wild mushroom — the most complex flavour</span></span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="kopytka"><span class="food-text"><span class="food-name">Kopytka</span><span class="food-desc">potato dumplings like gnocchi, pan-fried in butter until crisp</span></span></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="pierogi-ruskie"><span class="food-name">Pierogi ruskie</span></div><div class="food-desc">potato and farmer's cheese — the classic, non-negotiable</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="pierogi-mieso"><span class="food-name">Pierogi z mięsem</span></div><div class="food-desc">meat-filled dumplings, usually pan-fried with onion</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="pierogi-kapusta"><span class="food-name">Pierogi z kapustą i grzybami</span></div><div class="food-desc">sauerkraut and wild mushroom — the most complex flavour</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kopytka"><span class="food-name">Kopytka</span></div><div class="food-desc">potato dumplings like gnocchi, pan-fried in butter until crisp</div></label></li>
       </ul>
     </div>
 
     <div class="food-section">
       <h2>Mains</h2>
       <ul class="food-list">
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="kotlet"><span class="food-text"><span class="food-name">Kotlet schabowy</span><span class="food-desc">breaded pork cutlet — Poland's schnitzel, served everywhere</span></span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="bigos"><span class="food-text"><span class="food-name">Bigos</span><span class="food-desc">hunter's stew of sauerkraut, fresh cabbage, mixed meats, and wild mushrooms</span></span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="golabki"><span class="food-text"><span class="food-name">Gołąbki</span><span class="food-desc">cabbage rolls stuffed with rice and ground meat in tomato sauce</span></span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="kielbasa"><span class="food-text"><span class="food-name">Kiełbasa z grilla</span><span class="food-desc">grilled Polish sausage with mustard and rye bread — street food done right</span></span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="jagniecina"><span class="food-text"><span class="food-name">Jagnięcina</span><span class="food-desc">Tatra lamb — a regional specialty, look for it in Zakopane restaurants</span></span><span class="food-tag">Zakopane</span></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kotlet"><span class="food-name">Kotlet schabowy</span></div><div class="food-desc">breaded pork cutlet — Poland's schnitzel, served everywhere</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="bigos"><span class="food-name">Bigos</span></div><div class="food-desc">hunter's stew of sauerkraut, fresh cabbage, mixed meats, and wild mushrooms</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="golabki"><span class="food-name">Gołąbki</span></div><div class="food-desc">cabbage rolls stuffed with rice and ground meat in tomato sauce</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kielbasa"><span class="food-name">Kiełbasa z grilla</span></div><div class="food-desc">grilled Polish sausage with mustard and rye bread — street food done right</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="jagniecina"><span class="food-name">Jagnięcina</span><span class="food-tag">Zakopane</span></div><div class="food-desc">Tatra lamb — a regional specialty, look for it in Zakopane restaurants</div></label></li>
       </ul>
     </div>
 
     <div class="food-section">
       <h2>Baltic — Gdańsk</h2>
       <ul class="food-list">
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="sledz"><span class="food-text"><span class="food-name">Śledź</span><span class="food-desc">pickled herring — in oil, in cream, with onion, with apple: try several</span></span><span class="food-tag">Gdańsk</span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="smoked-fish"><span class="food-text"><span class="food-name">Smoked Baltic fish</span><span class="food-desc">from the waterfront stalls on the Motława — mackerel, eel, perch</span></span><span class="food-tag">Gdańsk</span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="fish-soup"><span class="food-text"><span class="food-name">Zupa rybna</span><span class="food-desc">Baltic fish soup — order it near the waterfront</span></span><span class="food-tag">Gdańsk</span></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="sledz"><span class="food-name">Śledź</span><span class="food-tag">Gdańsk</span></div><div class="food-desc">pickled herring — in oil, in cream, with onion, with apple: try several</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="smoked-fish"><span class="food-name">Smoked Baltic fish</span><span class="food-tag">Gdańsk</span></div><div class="food-desc">from the waterfront stalls on the Motława — mackerel, eel, perch</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="fish-soup"><span class="food-name">Zupa rybna</span><span class="food-tag">Gdańsk</span></div><div class="food-desc">Baltic fish soup — order it near the waterfront</div></label></li>
       </ul>
     </div>
 
     <div class="food-section">
       <h2>Mountain — Zakopane</h2>
       <ul class="food-list">
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="oscypek"><span class="food-text"><span class="food-name">Oscypek</span><span class="food-desc">smoked sheep's cheese, grilled and served with cranberry jam — buy it on Krupówki</span></span><span class="food-tag">Zakopane</span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="moskole"><span class="food-text"><span class="food-name">Moskole</span><span class="food-desc">mountain potato flatbreads with sheep's cheese and sour cream</span></span><span class="food-tag">Zakopane</span></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="oscypek"><span class="food-name">Oscypek</span><span class="food-tag">Zakopane</span></div><div class="food-desc">smoked sheep's cheese, grilled and served with cranberry jam — buy it on Krupówki</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="moskole"><span class="food-name">Moskole</span><span class="food-tag">Zakopane</span></div><div class="food-desc">mountain potato flatbreads with sheep's cheese and sour cream</div></label></li>
       </ul>
     </div>
 
     <div class="food-section">
       <h2>Street Food & Snacks</h2>
       <ul class="food-list">
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="doner"><span class="food-text"><span class="food-name">Döner kebab</span><span class="food-desc">Poland's döner scene is exceptional — strong Turkish immigration in the 90s means the quality rivals anything in Western Europe</span></span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="maczanka"><span class="food-text"><span class="food-name">Maczanka Krakowska</span><span class="food-desc">slow-braised pork shoulder in a roll, soaked in its own cooking juices — the definitive Kraków street food</span></span><span class="food-tag">Kraków</span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="zapiekanka"><span class="food-text"><span class="food-name">Zapiekanka</span><span class="food-desc">open-face baguette with mushrooms, cheese, ketchup — get it at Plac Nowy</span></span><span class="food-tag">Kraków</span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="obwarzanek"><span class="food-text"><span class="food-name">Obwarzanek krakowski</span><span class="food-desc">Kraków's ring-shaped street bagel with sesame or poppy seeds — a protected regional product</span></span><span class="food-tag">Kraków</span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="paczki"><span class="food-text"><span class="food-name">Pączki</span><span class="food-desc">deep-fried doughnuts filled with rose-hip jam — pick up from a bakery</span></span></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="doner"><span class="food-name">Döner kebab</span></div><div class="food-desc">Poland's döner scene is exceptional — strong Turkish immigration in the 90s means the quality rivals anything in Western Europe</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="maczanka"><span class="food-name">Maczanka Krakowska</span><span class="food-tag">Kraków</span></div><div class="food-desc">slow-braised pork shoulder in a roll, soaked in its own cooking juices — the definitive Kraków street food</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="zapiekanka"><span class="food-name">Zapiekanka</span><span class="food-tag">Kraków</span></div><div class="food-desc">open-face baguette with mushrooms, cheese, ketchup — get it at Plac Nowy</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="obwarzanek"><span class="food-name">Obwarzanek krakowski</span><span class="food-tag">Kraków</span></div><div class="food-desc">Kraków's ring-shaped street bagel with sesame or poppy seeds — a protected regional product</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="paczki"><span class="food-name">Pączki</span></div><div class="food-desc">deep-fried doughnuts filled with rose-hip jam — pick up from a bakery</div></label></li>
       </ul>
     </div>
 
     <div class="food-section">
       <h2>Sweets</h2>
       <ul class="food-list">
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="sernik"><span class="food-text"><span class="food-name">Sernik</span><span class="food-desc">Polish cheesecake — denser and less sweet than New York style, made with twaróg</span></span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="makowiec"><span class="food-text"><span class="food-name">Makowiec</span><span class="food-desc">poppy seed roll — a Polish classic, especially around holidays</span></span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="kremowka"><span class="food-text"><span class="food-name">Kremówka</span><span class="food-desc">layered vanilla cream cake — the "papal cake" from Wadowice, found at every bakery</span></span><span class="food-tag">Kraków</span></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="sernik"><span class="food-name">Sernik</span></div><div class="food-desc">Polish cheesecake — denser and less sweet than New York style, made with twaróg</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="makowiec"><span class="food-name">Makowiec</span></div><div class="food-desc">poppy seed roll — a Polish classic, especially around holidays</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kremowka"><span class="food-name">Kremówka</span><span class="food-tag">Kraków</span></div><div class="food-desc">layered vanilla cream cake — the "papal cake" from Wadowice, found at every bakery</div></label></li>
       </ul>
     </div>
 
     <div class="food-section">
       <h2>Drinks</h2>
       <ul class="food-list">
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="zubrowka"><span class="food-text"><span class="food-name">Żubrówka szarlotka</span><span class="food-desc">bison grass vodka with cloudy apple juice — the classic Polish cocktail</span></span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="krupnik"><span class="food-text"><span class="food-name">Krupnik</span><span class="food-desc">honey and spice vodka — order it warm after a day in the Tatras</span></span><span class="food-tag">Zakopane</span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="craft-beer"><span class="food-text"><span class="food-name">Polish craft beer</span><span class="food-desc">the scene has exploded — look for local breweries in Gdańsk and Kraków</span></span></label></li>
-        <li class="food-item"><label><input class="food-checkbox" type="checkbox" data-key="nalewka"><span class="food-text"><span class="food-name">Nalewka</span><span class="food-desc">homemade fruit or herb liqueur — cherry, quince, blackcurrant — ask what's local</span></span></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="zubrowka"><span class="food-name">Żubrówka szarlotka</span></div><div class="food-desc">bison grass vodka with cloudy apple juice — the classic Polish cocktail</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="krupnik"><span class="food-name">Krupnik</span><span class="food-tag">Zakopane</span></div><div class="food-desc">honey and spice vodka — order it warm after a day in the Tatras</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="craft-beer"><span class="food-name">Polish craft beer</span></div><div class="food-desc">the scene has exploded — look for local breweries in Gdańsk and Kraków</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="nalewka"><span class="food-name">Nalewka</span></div><div class="food-desc">homemade fruit or herb liqueur — cherry, quince, blackcurrant — ask what's local</div></label></li>
       </ul>
     </div>
 
