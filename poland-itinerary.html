@@ -321,6 +321,9 @@
     font-family: 'Raleway', sans-serif;
   }
 
+  .book-list li.booked::before { content: '✓'; }
+  .book-list li.booked { color: var(--muted); }
+
   .book-list a {
     color: var(--rust);
     text-decoration: underline;
@@ -887,7 +890,7 @@
           <tr>
             <td class="date-col"><span class="day-abbr">Sun </span>Sep 13</td>
             <td class="place-col">Kraków</td>
-            <td class="notes-col"><a href="https://bilety.wawel.krakow.pl/" target="_blank">Wawel Castle</a> · <a href="https://muzeumkrakowa.pl/en/branches/oskar-schindlers-enamel-factory" target="_blank">Schindler's Factory</a></td>
+            <td class="notes-col"><a href="https://muzeumkrakowa.pl/en/branches/oskar-schindlers-enamel-factory" target="_blank">Schindler's Factory</a> 10am guided tour · <a href="https://bilety.wawel.krakow.pl/" target="_blank">Wawel Castle</a> (afternoon)</td>
           </tr>
           <tr>
             <td class="date-col"><span class="day-abbr">Mon </span>Sep 14</td>
@@ -977,8 +980,7 @@
     <div class="overview-section">
       <h2>Book in Advance</h2>
       <ul class="book-list">
-        <li><strong>Schindler's Factory, Kraków</strong> — books out weeks ahead. <a href="https://muzeumkrakowa.pl/en/branches/oskar-schindlers-enamel-factory" target="_blank">Book online →</a></li>
-        <li><strong>Wawel Castle, Kraków</strong> — timed entry, same-day often unavailable. <a href="https://bilety.wawel.krakow.pl/" target="_blank">Book online →</a></li>
+        <li class="booked"><strong>Schindler's Factory, Kraków</strong> — booked: 10am guided tour, Sun Sep 13, 3 tickets.</li>
         <li><strong>Auschwitz-Birkenau</strong> — if visiting, book a guided tour weeks in advance. <a href="https://www.auschwitz.org/" target="_blank">Book at auschwitz.org →</a></li>
         <li><strong>Malbork Castle</strong> — popular day trip from Gdańsk, worth booking ahead. <a href="https://www.zamek.malbork.pl/en" target="_blank">Book online →</a></li>
         <li><strong>Trains</strong> — book on <a href="https://www.intercity.pl/en/" target="_blank">intercity.pl</a> when schedules open. EIP Warsaw → Gdańsk fills up.</li>
@@ -1181,10 +1183,10 @@
 
       <div class="day-block">
         <div class="day-label">Sun Sep 13</div>
-        <div class="day-title">Wawel Castle · Schindler's Factory</div>
+        <div class="day-title">Schindler's Factory · Wawel Castle</div>
         <div class="day-body">
-          <p>Wawel Royal Castle in the morning — the historic seat of Polish kings above the Vistula. <a href="https://bilety.wawel.krakow.pl/" target="_blank" class="booking-note"><strong>Book timed tickets online</strong> in advance</a></p>
-          <p style="margin-top:14px;">Schindler's Enamel Factory in the afternoon — a superb WWII museum telling the story of Kraków's Jews under Nazi occupation. <a href="https://muzeumkrakowa.pl/en/branches/oskar-schindlers-enamel-factory" target="_blank" class="booking-note"><strong>Book tickets online</strong> — sells out</a></p>
+          <p>Schindler's Enamel Factory at <strong>10am</strong> — guided tour booked for three. A superb WWII museum telling the story of Kraków's Jews under Nazi occupation. The tour runs roughly 90 minutes; arrive 15 minutes early at ul. Lipowa 4. <span class="booking-note"><strong>Booked</strong> — 10am guided tour, 3 tickets</span></p>
+          <p style="margin-top:14px;">Wawel Royal Castle in the afternoon — the historic seat of Polish kings above the Vistula. About 25 minutes back across the river from Lipowa. Timed entry, but availability is deep — dozens of slots per 10 minutes. No need to lock it in now; check back closer to the trip and grab an afternoon slot once the morning is settled. <a href="https://bilety.wawel.krakow.pl/" target="_blank" class="booking-note"><strong>Watch tickets</strong> — bilety.wawel.krakow.pl</a></p>
         </div>
       </div>
 
