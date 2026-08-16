@@ -324,6 +324,28 @@
   .book-list li.booked::before { content: '✓'; }
   .book-list li.booked { color: var(--muted); }
 
+  .ticket-sublist {
+    margin: 10px 0 2px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .ticket-sublist li {
+    padding: 4px 0;
+    border-bottom: none;
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  .ticket-sublist li::before { content: none; }
+
+  .ticket-num {
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+  }
+
   .book-list a {
     color: var(--rust);
     text-decoration: underline;
@@ -880,7 +902,7 @@
           <tr class="transport-row">
             <td class="date-col"><span class="day-abbr">Sat </span>Sep 12</td>
             <td class="place-col">🚂 Kraków</td>
-            <td class="notes-col">Depart Łódź Widzew 2:04pm · Arrive 4:30pm · 2h 26m · IC 8322</td>
+            <td class="notes-col">Depart Łódź Widzew 2:04pm · Arrive 4:30pm · 2h 26m · IC 8322 — booked</td>
           </tr>
           <tr>
             <td class="date-col"><span class="day-abbr">Sat </span>Sep 12</td>
@@ -895,22 +917,22 @@
           <tr>
             <td class="date-col"><span class="day-abbr">Mon </span>Sep 14</td>
             <td class="place-col">Kraków</td>
-            <td class="notes-col">Free day — possibly Jasło day trip</td>
+            <td class="notes-col">Open — <a href="https://www.wieliczka-saltmine.com/" target="_blank">Wieliczka Salt Mine</a> under consideration, not booked</td>
           </tr>
           <tr>
             <td class="date-col"><span class="day-abbr">Tue </span>Sep 15</td>
             <td class="place-col">Kraków</td>
-            <td class="notes-col">Free day — possibly <a href="https://www.auschwitz.org/" target="_blank">Auschwitz</a> and/or <a href="https://www.wieliczka-saltmine.com/" target="_blank">Wieliczka Salt Mine</a></td>
+            <td class="notes-col">Flex day — Kazimierz Jewish walking tour, Jasło, or <a href="https://www.auschwitz.org/" target="_blank">Auschwitz</a></td>
           </tr>
           <tr class="transport-row">
             <td class="date-col"><span class="day-abbr">Wed </span>Sep 16</td>
             <td class="place-col">🚂 Zakopane</td>
-            <td class="notes-col">Depart 12:03pm · Arrive 2:13pm · 2h 10m · EIC 5350</td>
+            <td class="notes-col">Depart 10:02am · Arrive 12:10pm · 2h 08m · EIC 1350 — booked</td>
           </tr>
           <tr>
             <td class="date-col"><span class="day-abbr">Wed </span>Sep 16</td>
             <td class="place-col">Zakopane</td>
-            <td class="notes-col">Arrive · Krupówki · Dinner</td>
+            <td class="notes-col">Arrive 12:30pm · Bags at reception · Krupówki lunch · Gubałówka funicular · Check in 3pm</td>
           </tr>
           <tr>
             <td class="date-col"><span class="day-abbr">Thu </span>Sep 17</td>
@@ -920,12 +942,12 @@
           <tr>
             <td class="date-col"><span class="day-abbr">Fri </span>Sep 18</td>
             <td class="place-col">Zakopane</td>
-            <td class="notes-col"><a href="https://www.pkl.pl/kasprowy-wierch/kolej-linowa-kasprowy-wierch.html?setlang=2" target="_blank">Kasprowy Wierch cable car</a> + ridge walk</td>
+            <td class="notes-col">Check out &amp; store bags · <a href="https://www.pkl.pl/kasprowy-wierch/kolej-linowa-kasprowy-wierch.html?setlang=2" target="_blank">Kasprowy Wierch cable car</a> 9:30am — booked · summit + views</td>
           </tr>
           <tr class="transport-row">
             <td class="date-col"><span class="day-abbr">Fri </span>Sep 18</td>
             <td class="place-col">🚂 Kraków</td>
-            <td class="notes-col">Depart 1:58pm · Arrive 3:57pm · 1h 59m · EIC 3550</td>
+            <td class="notes-col">Depart 2:00pm · Arrive 3:57pm · 1h 57m · EIC 3550 — booked</td>
           </tr>
           <tr>
             <td class="date-col"><span class="day-abbr">Fri </span>Sep 18</td>
@@ -982,12 +1004,20 @@
       <ul class="book-list">
         <li class="booked"><strong>Schindler's Factory, Kraków</strong> — booked: 10am guided tour, Sun Sep 13, 3 tickets.</li>
         <li class="booked"><strong>Starka, Kraków</strong> — booked: 6:00pm, Sat Sep 12, table for 3.</li>
+        <li class="booked"><strong>Kasprowy Wierch cable car, Zakopane</strong> — booked: 9:30am, Fri Sep 18. Check out of the Aries and leave the bags at the front desk first — the train to Kraków is at 2:00pm.</li>
         <li class="booked"><strong>Morskie Oko e-bus, Zakopane</strong> — booked: Thu Sep 17, 3 tickets each way. Out 9:00am Zakopane → Włosienica (89 zł each), back 3:00pm Włosienica → Zakopane (78 zł each). Includes the TPN park entrance fee. <strong>Save the confirmation PDF to all three phones</strong> — signal in the park is unreliable.</li>
-        <li><strong>Auschwitz-Birkenau</strong> — if visiting, book a guided tour weeks in advance. <a href="https://www.auschwitz.org/" target="_blank">Book at auschwitz.org →</a></li>
+        <li><strong>Wieliczka Salt Mine</strong> — pencilled in for Mon Sep 14, but not decided and not booked. Settle whether you want it first. <a href="https://www.wieliczka-saltmine.com/" target="_blank">Book at wieliczka-saltmine.com →</a></li>
+        <li><strong>Auschwitz-Birkenau</strong> — only if the Sep 15 flex day goes that way. Guided tours book out weeks ahead, so decide early rather than on the day. <a href="https://www.auschwitz.org/" target="_blank">Book at auschwitz.org →</a></li>
         <li><strong>Malbork Castle</strong> — popular day trip from Gdańsk, worth booking ahead. <a href="https://www.zamek.malbork.pl/en" target="_blank">Book online →</a></li>
-        <li class="booked"><strong>Warsaw → Gdańsk train</strong> — booked: EIP 3506, Mon Sep 7, 12:29pm.</li>
-        <li class="booked"><strong>Gdańsk → Łódź train</strong> — booked: IC 5114, Thu Sep 10, 11:47am.</li>
-        <li><strong>Remaining trains</strong> — book on <a href="https://www.intercity.pl/en/" target="_blank">intercity.pl</a> when schedules open. Łódź → Kraków, Kraków → Zakopane, Zakopane → Kraków.</li>
+        <li class="booked"><strong>All five trains</strong> — booked, 1st class, on <a href="https://www.intercity.pl/en/" target="_blank">intercity.pl</a>. Download all five PDFs before leaving.
+          <ul class="ticket-sublist">
+            <li>Mon Sep 7 · Warsaw Central → Gdańsk Main · 12:29–15:01 · EIP 3506 · <span class="ticket-num">WH63059475</span></li>
+            <li>Thu Sep 10 · Gdańsk Main → Łódź Fabryczna · 11:47–16:29 · IC 5114 · <span class="ticket-num">WH63059885</span></li>
+            <li>Sat Sep 12 · Łódź <strong>Widzew</strong> → Kraków Main · 14:04–16:30 · IC 8322 · <span class="ticket-num">WH63266156</span></li>
+            <li>Wed Sep 16 · Kraków Main → Zakopane · 10:02–12:10 · EIC 1350 · <span class="ticket-num">WH63519692</span></li>
+            <li>Fri Sep 18 · Zakopane → Kraków Main · 14:00–15:57 · EIC 3550 · <span class="ticket-num">WH63519693</span></li>
+          </ul>
+        </li>
       </ul>
     </div>
 
@@ -1157,7 +1187,7 @@
         <div class="day-label">Sat Sep 12</div>
         <div class="day-title">Morning Wander · Train to Kraków</div>
         <div class="day-body">
-          <p>Morning wander — murals, woonerfs, the Museum of the City of Łódź in Poznański's Neo-Baroque palace. Board at <strong>Łódź Widzew</strong>, not Fabryczna — about 15 minutes by taxi from PURO, so leave the hotel by around 1:30pm. Train departs <strong>2:04pm</strong>, arrives Kraków <strong>4:30pm</strong> (2h 26m) — IC 8322.</p>
+          <p>Morning wander — murals, woonerfs, the Museum of the City of Łódź in Poznański's Neo-Baroque palace. Board at <strong>Łódź Widzew</strong>, not Fabryczna — it's a taxi ride out from the center, unlike the station you arrived at. Train departs <strong>2:04pm</strong>, arrives Kraków <strong>4:30pm</strong> (2h 26m) — IC 8322.</p>
         </div>
       </div>
     </div>
@@ -1169,13 +1199,13 @@
         <span class="city-name">Kraków</span>
         <span class="city-dates">Sep 12–16 · 4 Nights · The Warszauer</span>
       </div>
-      <div class="city-adam-dates">Adam's connection: He lived at Świętego Sebastiana 5 — steps from Kazimierz, the historic Jewish quarter — from August 1947 until he left for Paris in September 1948. The Wistreich family (Reggie, Eva, Hugo, Aunt Hanka, Uncle Staszek) also lived in Kraków after returning from Kazakhstan. He visited again in 1976.</div>
+      <div class="city-adam-dates">Adam's connection: He lived at Świętego Sebastiana 5 — steps from Kazimierz, the historic Jewish quarter — in 1947, the year he left Poland for Paris. The Wistreich family (Reggie, Eva, Hugo, Aunt Hanka, Uncle Staszek) also lived in Kraków after returning from Kazakhstan. He visited again in 1976.</div>
 
       <div class="day-block">
         <div class="day-label">Sat Sep 12</div>
         <div class="day-title">Arrive Kraków · First Evening in Kazimierz</div>
         <div class="day-body">
-          <p>Arrive 4:30pm. Check in to The Warszauer — a 10-room boutique hotel in Kazimierz with a rooftop terrace overlooking the historic Jewish quarter. Walk to Świętego Sebastiana 5 — Adam's address from 1947 to 1948, a short walk from the hotel. Spend the evening in Kazimierz: synagogues, Jewish bookshops, restaurants, bars.</p>
+          <p>Arrive 4:30pm. Check in to The Warszauer — a 10-room boutique hotel in Kazimierz with a rooftop terrace overlooking the historic Jewish quarter. Walk to Świętego Sebastiana 5 — Adam's address in 1947, a short walk from the hotel. Spend the evening in Kazimierz: synagogues, Jewish bookshops, restaurants, bars.</p>
 
           <p style="margin-top:14px;">Dinner at <a href="https://starka.com.pl/en/" target="_blank"><strong>Starka</strong></a> at <strong>6:00pm</strong> — a traditional Polish restaurant in Kazimierz, known for pierogi, beef cheeks, and house-infused vodkas. <span class="booking-note"><strong>Booked</strong> — 6:00pm, table for 3</span></p>
 
@@ -1198,9 +1228,23 @@
 
       <div class="day-block">
         <div class="day-label">Mon Sep 14</div>
-        <div class="day-title">Free Day — Possibly Jasło Day Trip</div>
+        <div class="day-title">Open — Wieliczka Salt Mine Under Consideration</div>
         <div class="day-body">
-          <p>A free day — or a day trip to Jasło, about 2 hours by train. Jasło is Adam's hometown, where he grew up from age 5 to 17. The Rynek (market square) still has the house where he lived. The Jasiołka river where he and Reggie kayaked and baked potatoes in the ashes. Monastery Hill where he had his first kiss. The Boys' High School from which he was expelled just before the war began.</p>
+          <p><a href="https://www.wieliczka-saltmine.com/" target="_blank"><strong>Wieliczka Salt Mine</strong></a> — a UNESCO World Heritage site about 30 minutes from Kraków, where seven centuries of miners carved chapels, chandeliers and an entire underground cathedral out of rock salt. The standard tourist route is roughly two hours, a lot of it on stairs. A completely different kind of day from the rest of this trip.</p>
+
+          <p style="margin-top:14px;"><strong>Not decided and not booked.</strong> Still an open question whether it's worth the half day at all — the stairs are a real consideration, and it's the one stop on this trip with no family connection. If it's a no, this becomes a second open day in Kraków, which is no bad thing after a week of moving. <a href="https://www.wieliczka-saltmine.com/" target="_blank" class="booking-note"><strong>Decide, then book</strong> — wieliczka-saltmine.com</a></p>
+        </div>
+      </div>
+
+      <div class="day-block">
+        <div class="day-label">Tue Sep 15</div>
+        <div class="day-title">Flex Day</div>
+        <div class="day-body">
+          <p>The last full day in Kraków, deliberately left open — whatever hasn't happened yet lands here. Three candidates, in rough order of likelihood:</p>
+
+          <p style="margin-top:14px;"><strong>Jewish walking tour of Kazimierz</strong> — the quarter you've been sleeping in all week, walked properly with a guide: the seven historic synagogues, Szeroka Street, the ghetto wall fragments across the river in Podgórze, and Plac Bohaterów Getta. Half a day, no travel, and it connects directly to Adam's year in this city. Currently the most likely option.</p>
+
+          <p style="margin-top:14px;"><strong>Jasło</strong> — about 2 hours by train, and <em>pending a family decision</em>. Adam's hometown, where he grew up from age 5 to 17. The Rynek (market square) still has the house where he lived. The Jasiołka river where he and Reggie kayaked and baked potatoes in the ashes. Monastery Hill where he had his first kiss. The Boys' High School from which he was expelled just before the war began. It's a long day out and an emotionally heavy one — worth going only if everyone wants to.</p>
 
           <div class="photo photo-full">
             <img src="images/adam/jaslo-rynek-postcard.png" alt="Jasło Rynek, prewar postcard">
@@ -1224,16 +1268,8 @@
           </div>
 
           <p>The family that filled this town with life was almost entirely lost in the war. Uncle Dulek, Aunt Manka, cousins Renatka and Jasia — Adam's closest companions growing up — were among those who didn't survive. Of the children in the family photograph from Jasło, he was the only one left.</p>
-        </div>
-      </div>
 
-      <div class="day-block">
-        <div class="day-label">Tue Sep 15</div>
-        <div class="day-title">Free Day — Possibly Auschwitz and/or Wieliczka Salt Mine</div>
-        <div class="day-body">
-          <p>A free day in Kraków, or one of two possible day trips:</p>
-          <p><strong>Auschwitz-Birkenau</strong> — Adam's Uncle Mundek and his wife were taken here after fleeing Vienna. Adam's father Jacob almost certainly died on the train to this camp at age 54. A profound and deeply personal visit. <a href="https://www.auschwitz.org/" target="_blank" class="booking-note"><strong>Book guided tour weeks in advance</strong> at auschwitz.org</a></p>
-          <p style="margin-top:14px;"><strong><a href="https://www.wieliczka-saltmine.com/" target="_blank">Wieliczka Salt Mine</a></strong> — a UNESCO World Heritage site 30 minutes from Kraków, with an underground cathedral carved entirely from salt. A completely different kind of day.</p>
+          <p style="margin-top:14px;"><strong>Auschwitz-Birkenau</strong> — currently the least likely of the three, but it belongs on the list. Adam's Uncle Mundek and his wife were taken here after fleeing Vienna. Adam's father Jacob almost certainly died on the train to this camp at age 54. If it happens it needs a guided tour booked well in advance, so decide early rather than on the day. <a href="https://www.auschwitz.org/" target="_blank" class="booking-note"><strong>Book guided tour weeks in advance</strong> at auschwitz.org</a></p>
 
           <div class="memoir-quote">
             <div class="memoir-quote-label">From the memoir — Uncle Mundek</div>
@@ -1245,9 +1281,9 @@
 
       <div class="day-block">
         <div class="day-label">Wed Sep 16</div>
-        <div class="day-title">Morning Free · Train to Zakopane</div>
+        <div class="day-title">Early Train to Zakopane</div>
         <div class="day-body">
-          <p>Morning free in Kazimierz. Train departs <strong>12:03pm</strong>, arrives Zakopane <strong>2:13pm</strong> (2h 10m) — EIC 5350.</p>
+          <p>Check out and head to Kraków Główny, about 15 minutes from Kazimierz. Train departs <strong>10:02am</strong>, arrives Zakopane <strong>12:10pm</strong> (2h 08m) — EIC 1350, 1st class. <span class="booking-note"><strong>Booked</strong> — WH63519692</span></p>
         </div>
       </div>
     </div>
@@ -1263,9 +1299,13 @@
 
       <div class="day-block">
         <div class="day-label">Wed Sep 16</div>
-        <div class="day-title">Arrive Zakopane · Krupówki · Dinner</div>
+        <div class="day-title">Arrive Zakopane · Krupówki · Gubałówka</div>
         <div class="day-body">
-          <p>Arrive 2:13pm by train. Check in to Aries Hotel & SPA — centrally located, with thermal pool, outdoor jacuzzis, sauna, and breakfast included. Walk Krupówki, Zakopane's pedestrian street lined with stalls selling oscypek (smoked sheep's cheese), mountain food and crafts. The Tatra peaks rise dramatically on every side.</p>
+          <p>Arrive about 12:30pm. <strong>Check-in at the Aries isn't until 3:00pm</strong> — leave the bags at reception and go straight out. Krupówki is a five-minute walk: lunch there, then wander Zakopane's pedestrian street, lined with stalls selling oscypek (smoked sheep's cheese), mountain food and crafts. The Tatra peaks rise dramatically on every side.</p>
+
+          <p style="margin-top:14px;"><strong>Gubałówka</strong> in the afternoon — the funicular runs up from the top of Krupówki to a ridge with a panoramic view straight across at the Tatras, plus stalls, grilled food and a toboggan run at the top. No booking needed, just walk up and buy tickets. An easy first afternoon that gets you the big mountain view without a hike.</p>
+
+          <p style="margin-top:14px;">Back to the Aries after 3:00pm to check in properly — thermal pool, outdoor jacuzzis, sauna, breakfast included. Dinner in town.</p>
 
           <div class="memoir-quote">
             <div class="memoir-quote-label">From the memoir</div>
@@ -1286,18 +1326,17 @@
         <div class="day-body">
           <p>The crown jewel of the Tatras — a glacial lake at 1,395 metres, surrounded by soaring peaks. The e-bus runs all the way to Włosienica, past the usual Palenica Białczańska trailhead, which cuts the walk down to about 1.5km each way instead of the full two-hour approach. That is what makes this a comfortable day for three rather than a long slog.</p>
 
+          <p style="margin-top:14px;">Two fixed points, and the rest is yours: <strong>the 9:00am e-bus out from the TPN Nature Education Center</strong> (ul. Chałubińskiego 42), and <strong>the 3:00pm bus back from Włosienica</strong>. Arrange the ride to the pickup with the front desk the night before — Uber and Bolt are unreliable in Zakopane that early, and a local bus works too. The ride out is about 40 minutes, then a 20–30 minute walk to the lake, which leaves roughly four hours there.</p>
+
+          <p style="margin-top:14px;">Things worth knowing before you go:</p>
+
           <ul class="find-list">
-            <li><strong>~8:30am</strong> — Taxi from the Aries to the TPN Nature Education Center, ul. Chałubińskiego 42. Book it through the front desk the night before; Uber and Bolt are unreliable in Zakopane that early. A local bus to the pickup point is a workable backup. Aim to be there by <strong>8:45am</strong>.</li>
-            <li><strong>9:00am</strong> — E-bus to Włosienica, about 40 minutes (30 to Palenica Białczańska, then 10 more to Włosienica).</li>
-            <li><strong>~9:45am</strong> — Walk the 1.5km from Włosienica to the lake, 20–30 minutes.</li>
-            <li><strong>~10:15am</strong> — Arrive Morskie Oko. About four and a quarter hours at the lake.</li>
-            <li><strong>Optional</strong> — Michael's solo side trip up to Czarny Staw pod Rysami, 1.5–2 hours round trip. Steep but a moderate marked trail. This is <em>not</em> the Rysy summit, which is a serious technical climb — do not confuse the two.</li>
-            <li><strong>Meanwhile</strong> — Parents rest and eat at the PTTK mountain hut restaurant on the lake. Open 9am–6pm in low season. <strong>Cash only, no cards</strong> — bring złoty.</li>
-            <li><strong>~2:30pm</strong> — Leave the lake, walk back to Włosienica.</li>
-            <li><strong>3:00pm</strong> — E-bus back to Zakopane, arriving around 3:45–3:50pm.</li>
+            <li>The <strong>PTTK mountain hut</strong> restaurant at the lake is <strong>cash only</strong> — bring złoty. Open 9am–6pm in low season.</li>
+            <li>If Michael wants the side trip up to <strong>Czarny Staw pod Rysami</strong>, it's 1.5–2 hours round trip on a steep but moderate marked trail. This is <em>not</em> the Rysy summit, which is a serious technical climb — do not confuse the two.</li>
+            <li>Keep the ticket PDF on all three phones. Signal in the park is unreliable.</li>
           </ul>
 
-          <p>Back at the Aries for the thermal pool, jacuzzis and sauna.</p>
+          <p>Back at the Aries afterwards for the thermal pool, jacuzzis and sauna.</p>
 
           <span class="booking-note"><strong>Booked</strong> — E-bus 3 out / 3 back · 89 zł &amp; 78 zł each · TPN entry included · PDF on phones</span>
         </div>
@@ -1307,7 +1346,13 @@
         <div class="day-label">Fri Sep 18</div>
         <div class="day-title">Kasprowy Wierch Cable Car · Train to Kraków</div>
         <div class="day-body">
-          <p>Early start — <a href="https://www.pkl.pl/kasprowy-wierch/kolej-linowa-kasprowy-wierch.html?setlang=2" target="_blank">cable car up Kasprowy Wierch</a> (opens ~7:30am). Walk the ridge for as long as you like — even an hour at the top with those views is worth it. Return by cable car and check out. Train departs <strong>1:58pm</strong>, arrives Kraków <strong>3:57pm</strong> (1h 59m) — EIC 3550.</p>
+          <p>Check out before leaving and arrange luggage storage with reception — you won't be back for the bags until around midday. Kuźnice is a short taxi or bus ride from the center; sort out which the night before.</p>
+
+          <p style="margin-top:14px;"><a href="https://www.pkl.pl/kasprowy-wierch/kolej-linowa-kasprowy-wierch.html?setlang=2" target="_blank">Cable car up Kasprowy Wierch</a>, <strong>9:30am slot — be at the base station by 9:10am</strong>. ID is checked 20 minutes before the slot and there's a boarding queue after that, so this is the one hard deadline of the day. <strong>Michael is the named passenger on all three tickets and the one whose ID gets verified — bring his passport.</strong> <span class="booking-note"><strong>Booked</strong> — 9:30am cable car</span></p>
+
+          <p style="margin-top:14px;">You get a fixed <strong>1 hour 40 minutes</strong> on top. Lunch is at <strong>Poziom 1959</strong>, the summit restaurant — eat up there rather than in town. Wander the summit area and step out along the ridge a little if everyone's comfortable, but the full traverse toward Kopa Kondracka and Giewont is a serious multi-hour hike and isn't the plan.</p>
+
+          <p style="margin-top:14px;">Back down late morning, collect the bags, and on to the station. Train departs <strong>2:00pm</strong>, arrives Kraków <strong>3:57pm</strong> (1h 57m) — EIC 3550, 1st class. There's comfortable margin between the cable car and the train. <span class="booking-note"><strong>Booked</strong> — WH63519693</span></p>
         </div>
       </div>
     </div>
