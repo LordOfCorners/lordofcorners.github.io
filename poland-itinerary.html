@@ -714,6 +714,13 @@
     user-select: none;
   }
 
+  .food-intro {
+    font-size: 15px;
+    color: var(--muted);
+    margin: -4px 0 14px;
+    line-height: 1.6;
+  }
+
   .food-main {
     display: flex;
     align-items: center;
@@ -917,7 +924,7 @@
           <tr>
             <td class="date-col"><span class="day-abbr">Mon </span>Sep 14</td>
             <td class="place-col">Kraków</td>
-            <td class="notes-col">Open — <a href="https://www.wieliczka-saltmine.com/" target="_blank">Wieliczka Salt Mine</a> under consideration, not booked</td>
+            <td class="notes-col"><a href="https://www.wieliczka-saltmine.com/" target="_blank">Wieliczka Salt Mine</a> 11:30am English tour — booked · Afternoon free</td>
           </tr>
           <tr>
             <td class="date-col"><span class="day-abbr">Tue </span>Sep 15</td>
@@ -1006,7 +1013,7 @@
         <li class="booked"><strong>Starka, Kraków</strong> — booked: 6:00pm, Sat Sep 12, table for 3.</li>
         <li class="booked"><strong>Kasprowy Wierch cable car, Zakopane</strong> — booked: 9:30am, Fri Sep 18. Check out of the Aries and leave the bags at the front desk first — the train to Kraków is at 2:00pm.</li>
         <li class="booked"><strong>Morskie Oko e-bus, Zakopane</strong> — booked: Thu Sep 17, 3 tickets each way. Out 9:00am Zakopane → Włosienica (89 zł each), back 3:00pm Włosienica → Zakopane (78 zł each). Includes the TPN park entrance fee. <strong>Save the confirmation PDF to all three phones</strong> — signal in the park is unreliable.</li>
-        <li><strong>Wieliczka Salt Mine</strong> — pencilled in for Mon Sep 14, but not decided and not booked. Settle whether you want it first. <a href="https://www.wieliczka-saltmine.com/" target="_blank">Book at wieliczka-saltmine.com →</a></li>
+        <li class="booked"><strong>Wieliczka Salt Mine</strong> — booked: Tourist Route, 11:30am English tour, Mon Sep 14, 3 tickets (1 standard + 2 discount), 421 zł. Bring passports — the discount tickets need proof of age at entry.</li>
         <li><strong>Auschwitz-Birkenau</strong> — only if the Sep 15 flex day goes that way. Guided tours book out weeks ahead, so decide early rather than on the day. <a href="https://www.auschwitz.org/" target="_blank">Book at auschwitz.org →</a></li>
         <li><strong>Malbork Castle</strong> — popular day trip from Gdańsk, worth booking ahead. <a href="https://www.zamek.malbork.pl/en" target="_blank">Book online →</a></li>
         <li class="booked"><strong>All five trains</strong> — booked, 1st class, on <a href="https://www.intercity.pl/en/" target="_blank">intercity.pl</a>. Download all five PDFs before leaving.
@@ -1228,11 +1235,11 @@
 
       <div class="day-block">
         <div class="day-label">Mon Sep 14</div>
-        <div class="day-title">Open — Wieliczka Salt Mine Under Consideration</div>
+        <div class="day-title">Wieliczka Salt Mine</div>
         <div class="day-body">
-          <p><a href="https://www.wieliczka-saltmine.com/" target="_blank"><strong>Wieliczka Salt Mine</strong></a> — a UNESCO World Heritage site about 30 minutes from Kraków, where seven centuries of miners carved chapels, chandeliers and an entire underground cathedral out of rock salt. The standard tourist route is roughly two hours, a lot of it on stairs. A completely different kind of day from the rest of this trip.</p>
+          <p><a href="https://www.wieliczka-saltmine.com/" target="_blank"><strong>Wieliczka Salt Mine</strong></a> — a UNESCO site where seven centuries of miners carved chapels, underground lakes and an entire cathedral out of rock salt. St. Kinga's Chapel, cut whole from the salt, is the one everyone comes for. Tourist Route, English, <strong>11:30am</strong>, about two and a half hours. Meeting point is Daniłowicza 10, roughly 30 minutes from Kraków by taxi or train from Kraków Główny. A deliberately late start after Schindler's the day before, with the afternoon left free. <span class="booking-note"><strong>Booked</strong> — 11:30am English tour, 3 tickets</span></p>
 
-          <p style="margin-top:14px;"><strong>Not decided and not booked.</strong> Still an open question whether it's worth the half day at all — the stairs are a real consideration, and it's the one stop on this trip with no family connection. If it's a no, this becomes a second open day in Kraków, which is no bad thing after a week of moving. <a href="https://www.wieliczka-saltmine.com/" target="_blank" class="booking-note"><strong>Decide, then book</strong> — wieliczka-saltmine.com</a></p>
+          <p style="margin-top:14px;">Three things worth knowing: it's a constant <strong>14–17°C underground</strong>, so everyone brings a jacket whatever the weather above. The descent is around <strong>800 steps</strong> — the way out is by lift. And the two discount tickets need <strong>proof of age at entry, so bring passports</strong>. Closed comfortable shoes; large bags aren't allowed in.</p>
         </div>
       </div>
 
@@ -1424,6 +1431,7 @@
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kapusniak"><span class="food-name">Kapuśniak</span></div><div class="food-desc">sauerkraut or fresh cabbage soup with smoked meat — simpler than bigos, pure comfort</div></label></li>
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="grochowka"><span class="food-name">Grochówka</span></div><div class="food-desc">split pea soup with smoked sausage — thick, smoky, and filling</div></label></li>
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="pomidorowa"><span class="food-name">Zupa pomidorowa</span></div><div class="food-desc">tomato soup with rice or pasta — Poland's most beloved everyday soup</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="czernina"><span class="food-name">Czernina staropolska</span><span class="food-tag">hard to find</span></div><div class="food-desc">old-Polish duck blood soup, sweet-sour with dried fruit — most associated with Greater Poland and Kujawy, and rare on menus anywhere now. Ask at traditional places; treat finding it as the win</div></label></li>
       </ul>
     </div>
 
@@ -1434,6 +1442,7 @@
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="pierogi-mieso"><span class="food-name">Pierogi z mięsem</span></div><div class="food-desc">meat-filled dumplings, usually pan-fried with onion</div></label></li>
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="pierogi-kapusta"><span class="food-name">Pierogi z kapustą i grzybami</span></div><div class="food-desc">sauerkraut and wild mushroom — the most complex flavour</div></label></li>
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kopytka"><span class="food-name">Kopytka</span></div><div class="food-desc">potato dumplings like gnocchi, pan-fried in butter until crisp</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kluski-z-serem"><span class="food-name">Kluski z serem</span></div><div class="food-desc">soft dumplings with sweet farmer's cheese, butter and often cinnamon sugar — comfort food, served as a main or a dessert</div></label></li>
       </ul>
     </div>
 
@@ -1443,10 +1452,23 @@
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kotlet"><span class="food-name">Kotlet schabowy</span></div><div class="food-desc">breaded pork cutlet — Poland's schnitzel, served everywhere</div></label></li>
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="bigos"><span class="food-name">Bigos</span></div><div class="food-desc">hunter's stew of sauerkraut, fresh cabbage, mixed meats, and wild mushrooms</div></label></li>
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="golabki"><span class="food-name">Gołąbki</span></div><div class="food-desc">cabbage rolls stuffed with rice and ground meat in tomato sauce</div></label></li>
-        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kielbasa"><span class="food-name">Kiełbasa z grilla</span></div><div class="food-desc">grilled Polish sausage with mustard and rye bread — street food done right</div></label></li>
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="jagniecina"><span class="food-name">Jagnięcina</span><span class="food-tag">Zakopane</span></div><div class="food-desc">Tatra lamb — a regional specialty, look for it in Zakopane restaurants</div></label></li>
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kaszanka"><span class="food-name">Kaszanka</span></div><div class="food-desc">grilled blood sausage made with pig's blood, groats, and liver — best from a street grill</div></label></li>
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="lazanki"><span class="food-name">Łazanki</span></div><div class="food-desc">flat pasta with sauerkraut and wild mushrooms — a simple, deeply Polish dish</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="placki"><span class="food-name">Placki ziemniaczane</span></div><div class="food-desc">crisp fried potato pancakes, served with sour cream or sugar. In the mountains look for <em>placki po zbójnicku</em> — the same pancakes buried under a meat goulash</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="nalesniki"><span class="food-name">Naleśniki</span></div><div class="food-desc">thin crepes — savoury with cheese and mushroom, or sweet with twaróg and fruit</div></label></li>
+      </ul>
+    </div>
+
+    <div class="food-section">
+      <h2>Kiełbasa</h2>
+      <ul class="food-list">
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kielbasa"><span class="food-name">Kiełbasa z grilla</span></div><div class="food-desc">the generic grilled sausage with mustard and rye bread — street food done right, and the baseline to judge the rest against</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kielbasa-wiejska"><span class="food-name">Kiełbasa wiejska</span></div><div class="food-desc">"country sausage" — thick, coarsely ground pork, heavily smoked and garlicky. The everyday benchmark</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kielbasa-mysliwska"><span class="food-name">Kiełbasa myśliwska</span></div><div class="food-desc">"hunter's sausage" — short, dry, hard-smoked with juniper. Keeps forever, which is the point. Good walking food</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kabanosy"><span class="food-name">Kabanosy</span></div><div class="food-desc">long, pencil-thin dried sausage sticks, intensely smoky. An EU-protected Polish specialty and the national road-trip snack</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kielbasa-krakowska"><span class="food-name">Kiełbasa krakowska</span><span class="food-tag">Kraków</span></div><div class="food-desc">thick, lightly smoked, sliced cold like a deli meat rather than grilled — named for the city and worth eating there</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kielbasa-biala"><span class="food-name">Kiełbasa biała</span><span class="food-tag">in żurek</span></div><div class="food-desc">raw, unsmoked white sausage — you don't order it on its own. It's what's sitting in the żurek, so this one gets ticked with the soup</div></label></li>
       </ul>
     </div>
 
@@ -1456,6 +1478,7 @@
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="sledz"><span class="food-name">Śledź</span><span class="food-tag">Gdańsk</span></div><div class="food-desc">pickled herring — in oil, in cream, with onion, with apple: try several</div></label></li>
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="smoked-fish"><span class="food-name">Smoked Baltic fish</span><span class="food-tag">Gdańsk</span></div><div class="food-desc">from the waterfront stalls on the Motława — mackerel, eel, perch</div></label></li>
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="fish-soup"><span class="food-name">Zupa rybna</span><span class="food-tag">Gdańsk</span></div><div class="food-desc">Baltic fish soup — order it near the waterfront</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="goldwasser"><span class="food-name">Goldwasser</span><span class="food-tag">Gdańsk</span></div><div class="food-desc">herbal liqueur with flakes of real gold suspended in it, made in Gdańsk since 1598 — the city's own drink, and about as regional as it gets. Order it at Goldwasser on the Motława or buy a bottle to bring home</div></label></li>
       </ul>
     </div>
 
@@ -1468,6 +1491,14 @@
     </div>
 
     <div class="food-section">
+      <h2>Jewish Kraków</h2>
+      <ul class="food-list">
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="gefilte"><span class="food-name">Gefilte fish</span><span class="food-tag">Kazimierz</span></div><div class="food-desc">poached stuffed carp, sweetened in the Polish style — the Ashkenazi dish most likely to taste like family. Look for it in Kazimierz</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="karp-galarecie"><span class="food-name">Karp w galarecie</span></div><div class="food-desc">carp in aspic — the Jewish and Polish Christmas tables converge on this one dish. Same fish, same jelly, two traditions</div></label></li>
+      </ul>
+    </div>
+
+    <div class="food-section">
       <h2>Street Food & Snacks</h2>
       <ul class="food-list">
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="doner"><span class="food-name">Döner kebab</span></div><div class="food-desc">Poland's döner scene is exceptional — strong Turkish immigration in the 90s means the quality rivals anything in Western Europe</div></label></li>
@@ -1476,6 +1507,10 @@
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="obwarzanek"><span class="food-name">Obwarzanek krakowski</span><span class="food-tag">Kraków</span></div><div class="food-desc">Kraków's ring-shaped street bagel with sesame or poppy seeds — a protected regional product</div></label></li>
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="paczki"><span class="food-name">Pączki</span></div><div class="food-desc">deep-fried doughnuts filled with rose-hip jam — pick up from a bakery</div></label></li>
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="ogorki-kiszone"><span class="food-name">Ogórki kiszone</span></div><div class="food-desc">naturally fermented sour pickles — not vinegar pickles, completely different and addictive</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="bulka-pieczarkami"><span class="food-name">Bułka z pieczarkami</span></div><div class="food-desc">a roll piled with stewed mushrooms in cream — sold from street windows and market stalls, the cheap savoury cousin of the zapiekanka</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="smalec"><span class="food-name">Smalec</span></div><div class="food-desc">rendered pork lard with crackling, onion and apple, spread on dark bread — turns up free on the table at traditional restaurants, with pickles alongside</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="nozki"><span class="food-name">Nóżki w galarecie</span></div><div class="food-desc">pork knuckle set in its own savoury jelly, served cold with vinegar and rye bread — an old-school starter that has largely survived in traditional places</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="lody"><span class="food-name">Lody</span></div><div class="food-desc">Polish ice cream, sold everywhere from hole-in-the-wall <em>lodziarnie</em> — look for <em>lody rzemieślnicze</em> (artisan) and expect long queues at the good ones</div></label></li>
       </ul>
     </div>
 
@@ -1484,7 +1519,21 @@
       <ul class="food-list">
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="sernik"><span class="food-name">Sernik</span></div><div class="food-desc">Polish cheesecake — denser and less sweet than New York style, made with twaróg</div></label></li>
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="makowiec"><span class="food-name">Makowiec</span></div><div class="food-desc">poppy seed roll — a Polish classic, especially around holidays</div></label></li>
-        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kremowka"><span class="food-name">Kremówka</span><span class="food-tag">Kraków</span></div><div class="food-desc">layered vanilla cream cake — the "papal cake" from Wadowice, found at every bakery</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kremowka"><span class="food-name">Kremówka</span><span class="food-tag">Kraków</span></div><div class="food-desc">layered vanilla cream cake — the "papal cake" from Wadowice, found at every bakery</div></label></li>      </ul>
+    </div>
+
+    <div class="food-section">
+      <h2>Wódka</h2>
+      <p class="food-intro">The first three are clear spirits you drink cold and straight. The rest are <em>nalewki</em> — infused, sweeter, lower proof, often house-made. <strong>Starka on Sep 12 is known for its own infusions</strong>, so that dinner is the obvious place to work through several at once.</p>
+      <ul class="food-list">
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="wyborowa"><span class="food-name">Wyborowa</span></div><div class="food-desc">the standard rye vodka, made since 1823 — clean and neutral. The reference point everything else is judged against</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="zytnia"><span class="food-name">Żytnia</span></div><div class="food-desc">another classic rye, a little rounder and softer than Wyborowa — the everyday bottle</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="zubrowka-straight"><span class="food-name">Żubrówka</span></div><div class="food-desc">bison grass vodka from the Białowieża forest, with the blade of grass in the bottle — grassy and faintly vanilla. Straight here; see Drinks for the apple juice version</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="mysliwska"><span class="food-name">Myśliwska</span></div><div class="food-desc">"hunter's vodka" — juniper and herbs, faintly like a soft gin. The drink that matches the sausage of the same name</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="pigwowka"><span class="food-name">Pigwówka</span></div><div class="food-desc">quince — floral, honeyed and tart. One of the best of the fruit nalewki and a good first one to try</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="wisniowka"><span class="food-name">Wiśniówka</span></div><div class="food-desc">sour cherry — deep red, almost a dessert. The most common nalewka on any list</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="cytrynowka"><span class="food-name">Cytrynówka</span></div><div class="food-desc">lemon — sharp and bracing, the lightest of the set. Good between heavier ones</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="pieprzowka"><span class="food-name">Pieprzówka</span></div><div class="food-desc">black pepper — hot going down, traditionally taken as a folk remedy for a cold. Order it last</div></label></li>
       </ul>
     </div>
 
