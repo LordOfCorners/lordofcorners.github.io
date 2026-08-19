@@ -1341,7 +1341,6 @@
 <script>
 // Each tab has its own URL, so a tab can be linked to directly (#food, #adam).
 var TAB_HASH = { overview: 'itinerary', detail: 'family', food: 'food' };
-var TAB_ALIAS = { adam: 'detail' }; // links shared before the tab was renamed
 
 function showTab(name, replace) {
   var panel = document.getElementById('tab-' + name);
@@ -1359,7 +1358,7 @@ function showTab(name, replace) {
 function tabFromHash() {
   var slug = location.hash.slice(1).toLowerCase();
   for (var name in TAB_HASH) if (TAB_HASH[name] === slug) return name;
-  return TAB_ALIAS[slug] || 'overview';
+  return 'overview';
 }
 
 showTab(tabFromHash(), true);
