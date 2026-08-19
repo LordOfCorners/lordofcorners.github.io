@@ -827,9 +827,9 @@
 <!-- TABS NAV -->
 <div class="tabs-nav">
   <div class="tabs-nav-inner">
-    <button class="tab-btn active" onclick="showTab('overview')">Itinerary</button>
-    <button class="tab-btn" onclick="showTab('detail')">Adam</button>
-    <button class="tab-btn" onclick="showTab('food')">Food</button>
+    <button class="tab-btn active" data-tab="overview" onclick="showTab('overview')">Itinerary</button>
+    <button class="tab-btn" data-tab="detail" onclick="showTab('detail')">Adam</button>
+    <button class="tab-btn" data-tab="food" onclick="showTab('food')">Food</button>
   </div>
 </div>
 
@@ -1030,7 +1030,7 @@
     <div class="overview-section">
       <h2>Notes on the Ground</h2>
       <ul class="find-list">
-        <li><strong>Sun Sep 6 · QueerMuzeum Warszawa</strong> — Marszałkowska 83, near the Palace of Culture. Poland's first LGBTQ+ museum and the first in post-communist Europe, opened December 2024 by Lambda Warszawa; around 150 objects drawn from an archive Lambda has kept since the 1940s. Free, and open only three days a week — <strong>Sunday 12:00–16:00</strong> is the only window on the whole trip. I'm doing the free English guided tour, <strong>12:00–13:30</strong>, so the rest of the day builds around it — Uprising Museum and Praga after. Individuals don't need to book, but it's volunteer-run and the room holds about forty, so email <a href="mailto:kontakt@queermuzeum.pl">kontakt@queermuzeum.pl</a> ahead to say I'm coming.</li>
+        <li><strong>Sun Sep 6 · QueerMuzeum Warszawa</strong> — Marszałkowska 83, near the Palace of Culture. Poland's first LGBTQ+ museum and the first in post-communist Europe, opened December 2024 by Lambda Warszawa; around 150 objects drawn from an archive Lambda has kept since the 1940s. Free, and open only three days a week — <strong>Sunday 12:00–16:00</strong> is the only window on the whole trip. I'm doing the free English guided tour, <strong>12:00–13:30</strong>, so the rest of the day builds around it — Uprising Museum and Praga after. No booking needed, and the space is small, so turn up a few minutes early.</li>
         <li><strong>Sun Sep 13 · Podgórze</strong> — Schindler's ends around 11:45. <strong>Krakus</strong>, an old-school <em>bar mleczny</em> at ul. Limanowskiego 16, is a few minutes away and open 9am–4pm on Sundays. The <strong>Eagle Pharmacy</strong> is Wed–Sun only, so this Sunday is the one realistic window for it on the whole trip; 7 minutes' walk, 45 min to an hour and a quarter inside.</li>
         <li><strong>Mon Sep 14 · Wieliczka</strong> — a constant 14–17°C underground, so everyone needs a jacket whatever the weather above. The descent is around 800 steps; the way out is by lift. Closed comfortable shoes, no large bags. Meeting point Daniłowicza 10, about 30 minutes out of Kraków.</li>
         <li><strong>Tue Sep 15 · Auschwitz</strong>, if we go — the tour is 3h45 across Auschwitz I and Birkenau, finishing around 3:15pm, and <strong>arrival 30 minutes early is required</strong> for airport-style security. The <strong>Lajkonik bus</strong> from MDA (Bosacka 18, right beside Kraków Główny) at 9:20am lands at the Museum car park at 10:45 — leave the Warszauer by taxi around 8:45. The train works too (IC 3402, 9:53 → Oświęcim 10:36) but leaves the last mile on foot or by local bus, which matters more on the way back after four hours standing; returning is Lajkonik from the car park, or a train connection into Kraków around 5:18pm. Nothing bigger than a shoebox goes inside — 5 zł storage on site, card only. The break between the two camps is only about 15 minutes, so bring something you can eat quickly. Most of the visit is outdoors on uneven ground.</li>
@@ -1327,12 +1327,31 @@
 </div>
 
 <script>
-function showTab(name) {
+// Each tab has its own URL, so a tab can be linked to directly (#food, #adam).
+var TAB_HASH = { overview: 'itinerary', detail: 'adam', food: 'food' };
+
+function showTab(name, replace) {
+  var panel = document.getElementById('tab-' + name);
+  if (!panel) return;
   document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('tab-' + name).classList.add('active');
-  event.target.classList.add('active');
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === name));
+  panel.classList.add('active');
+  var hash = '#' + TAB_HASH[name];
+  if (location.hash !== hash) {
+    if (replace) history.replaceState(null, '', hash);
+    else history.pushState(null, '', hash);
+  }
 }
+
+function tabFromHash() {
+  var slug = location.hash.slice(1).toLowerCase();
+  for (var name in TAB_HASH) if (TAB_HASH[name] === slug) return name;
+  return 'overview';
+}
+
+showTab(tabFromHash(), true);
+window.addEventListener('hashchange', () => showTab(tabFromHash(), true));
+window.addEventListener('popstate', () => showTab(tabFromHash(), true));
 
 document.querySelectorAll('.food-checkbox').forEach(cb => {
   const key = 'food-' + cb.dataset.key;
