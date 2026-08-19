@@ -828,7 +828,7 @@
 <div class="tabs-nav">
   <div class="tabs-nav-inner">
     <button class="tab-btn active" data-tab="overview" onclick="showTab('overview')">Itinerary</button>
-    <button class="tab-btn" data-tab="detail" onclick="showTab('detail')">Adam</button>
+    <button class="tab-btn" data-tab="detail" onclick="showTab('detail')">Family</button>
     <button class="tab-btn" data-tab="food" onclick="showTab('food')">Food</button>
   </div>
 </div>
@@ -1291,9 +1291,21 @@
     <div class="food-section">
       <h2>Sweets</h2>
       <ul class="food-list">
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="szarlotka"><span class="food-name">Szarlotka</span></div><div class="food-desc">apple cake, served warm with cream — the one dessert on every menu in the country</div></label></li>
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="sernik"><span class="food-name">Sernik</span></div><div class="food-desc">Polish cheesecake — denser and less sweet than New York style, made with twaróg</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="sernik-krakowski"><span class="food-name">Sernik krakowski</span><span class="food-tag">Kraków</span></div><div class="food-desc">the local version, with a lattice of pastry strips over the top</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="karpatka"><span class="food-name">Karpatka</span></div><div class="food-desc">choux pastry over thick custard, the cracked top meant to look like the Carpathians</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kremowka"><span class="food-name">Kremówka</span><span class="food-tag">Kraków</span></div><div class="food-desc">layered vanilla cream cake — the "papal cake" from Wadowice, found at every bakery</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="wuzetka"><span class="food-name">Wuzetka</span><span class="food-tag">Warsaw</span></div><div class="food-desc">chocolate cream cake named after the W-Z road built through the ruins in 1949</div></label></li>
         <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="makowiec"><span class="food-name">Makowiec</span></div><div class="food-desc">poppy seed roll — a Polish classic, especially around holidays</div></label></li>
-        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="kremowka"><span class="food-name">Kremówka</span><span class="food-tag">Kraków</span></div><div class="food-desc">layered vanilla cream cake — the "papal cake" from Wadowice, found at every bakery</div></label></li>      </ul>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="jagodzianki"><span class="food-name">Jagodzianki</span><span class="food-tag">seasonal</span></div><div class="food-desc">sweet buns stuffed with blueberries — peak season is summer, so September is the tail end</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="faworki"><span class="food-name">Faworki</span></div><div class="food-desc">thin ribbons of fried dough under a drift of powdered sugar; also called chrust</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="sekacz"><span class="food-name">Sękacz</span></div><div class="food-desc">spit cake, batter layered over a turning spindle so it cuts into tree rings</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="piernik"><span class="food-name">Piernik</span><span class="food-tag">Toruń original</span></div><div class="food-desc">spiced honey gingerbread, often filled with plum jam and dipped in chocolate</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="ptasie-mleczko"><span class="food-name">Ptasie mleczko</span></div><div class="food-desc">"bird's milk" — soft marshmallow in dark chocolate, invented by Wedel in 1936</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="krowki"><span class="food-name">Krówki</span></div><div class="food-desc">chewy milk fudge in twisted wrappers, sold everywhere by the bag</div></label></li>
+        <li class="food-item"><label><div class="food-main"><input class="food-checkbox" type="checkbox" data-key="wedel"><span class="food-name">Wedel drinking chocolate</span><span class="food-tag">Warsaw</span></div><div class="food-desc">at the Pijalnia Czekolady on Szpitalna — thick enough to stand a spoon in</div></label></li>
+      </ul>
     </div>
 
     <div class="food-section">
@@ -1328,7 +1340,8 @@
 
 <script>
 // Each tab has its own URL, so a tab can be linked to directly (#food, #adam).
-var TAB_HASH = { overview: 'itinerary', detail: 'adam', food: 'food' };
+var TAB_HASH = { overview: 'itinerary', detail: 'family', food: 'food' };
+var TAB_ALIAS = { adam: 'detail' }; // links shared before the tab was renamed
 
 function showTab(name, replace) {
   var panel = document.getElementById('tab-' + name);
@@ -1346,7 +1359,7 @@ function showTab(name, replace) {
 function tabFromHash() {
   var slug = location.hash.slice(1).toLowerCase();
   for (var name in TAB_HASH) if (TAB_HASH[name] === slug) return name;
-  return 'overview';
+  return TAB_ALIAS[slug] || 'overview';
 }
 
 showTab(tabFromHash(), true);
